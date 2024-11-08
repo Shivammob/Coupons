@@ -1,0 +1,145 @@
+* {
+    text-decoration: none;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+}
+
+html {
+    scroll-behavior: smooth;
+    font-size: 16px;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-size: 15px;
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 400;
+    color: $color-black;
+    overflow-x: hidden;
+    transition: opacity .5s 0.3s ease-in-out;
+    @media only screen and (max-width: 767px) {
+        font-size: 14px;
+    }
+
+    &.menu-show {
+        position: relative;
+        overflow: hidden;
+    }
+}
+
+a,
+li {
+    text-decoration: none;
+    list-style-type: none;
+
+    &:hover {
+        text-decoration: none;
+    }
+}
+
+
+[type=reset],
+[type=submit],
+button,
+html [type=button] {
+    outline: none;
+}
+
+button {
+    border: none;
+    // background-color: $color-white;
+    outline: none;
+}
+
+.btn {
+    font-weight: 500;
+    font-size: 15px;
+    border: 1px solid transparent;
+    padding: 10px;
+    transition: 0.5s ease;
+
+    &:focus {
+        box-shadow: none;
+    }
+
+    &.btn-blue {
+        color: $color-white;
+        padding: 12px 21px;
+        border-radius: 0;
+        background-color: $color-primary;
+    }
+
+    &.btn-white {
+        color: $color-black;
+        font-weight: 600;
+        background-color: $color-white;
+
+        &:hover {
+            color: $color-white;
+            background-color: $color-black;
+        }
+    }
+
+    &.btn-outline {
+        color: $color-primary;
+        font-weight: 600;
+        border: 1px dashed $color-primary;
+        border-radius: 0;
+        &:hover {
+            color: $color-white;
+            background-color: $color-primary;
+        }
+    }
+
+    &.btn-coupon {
+        display: flex;
+        position: relative;
+        width: 100%;
+        margin: 0 auto;
+        @media only screen and (max-width: 767px) {
+            padding: 14px 10px;
+            width: 100%;
+        }
+        &:after {
+            content: "";
+            position: absolute;
+            left: 0;
+            top: 0;
+            background: url(../images/purple_bg.png) no-repeat;
+            border: 1px solid rgba(0, 43, 94, 0.6980392157);
+            height: 100%;
+            width: 96%;
+            background-size: 92% 100%;
+            background-position: -12px;
+            @media only screen and (max-width: 767px) {
+                
+            }
+        }
+        &:hover {
+            &:after {
+                background: url(../images/coupon_box.png) no-repeat;
+                background-size: 92% 100%;
+                background-position: -12px;
+            }
+        }
+        .getcode {
+            color: $color-white;
+            position: relative;
+            z-index: 2;
+            white-space: nowrap;
+        }
+        .hcode {
+            color: $color-primary;
+            display: block;
+            margin-left: -32px;
+            width: 120px;
+            @media only screen and (max-width: 767px) {
+                margin-left: 85px;
+            }
+        }
+    }
+}

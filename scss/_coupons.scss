@@ -1,0 +1,191 @@
+.promo-code {
+    padding: 34px 10px 25px;
+    background: #002B5E1A;
+
+    &-wrap {
+        h5 {
+            margin-bottom: 0;
+
+            span {
+                color: #333333;
+                font-weight: 400;
+            }
+        }
+    }
+}
+
+.nav {
+    &.nav-coupons {
+        @media only screen and (max-width: 767px) {
+            flex-wrap: nowrap;
+            white-space: nowrap;
+            overflow: scroll;
+        }
+        .nav-link {
+            color: #666666;
+            background: unset;
+            padding: 0 0 8px;
+            margin: 10px 34px 25px 0;
+            @media only screen and (max-width: 767px) {
+                margin: 10px 25px 25px 0;
+            }
+
+            &.active {
+                color: $color-primary;
+                font-weight: 500;
+                border-bottom: 3px solid $color-primary;
+            }
+        }
+    }
+}
+
+.rewards-program {
+    &-card {
+        border: 1px solid #C4C4C4;
+
+        &-left {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            line-height: 1.2;
+            color: $color-primary;
+            font-size: 32px;
+            font-weight: 500;
+            background: #002B5E1A;
+            @media only screen and (max-width: 767px) {
+                flex-direction: row;
+                font-size: 24px;
+                padding: 10px;
+            }
+        }
+        &-mid {
+            padding: 16px 0;
+            @media only screen and (max-width: 767px) {
+                padding: 16px;
+            }
+        }
+    }
+}
+
+
+.invite-friends {
+    h6 {
+        font-family: 'Yeseva One', cursive;
+        color: $color-primary;
+        font-weight: 400;
+        text-transform: capitalize;
+    }
+
+    .social-icons-wrapper {
+        .social-icons {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: rgba(0, 43, 94, 0.1019607843);
+            border-radius: 100%;
+            width: 35px;
+            height: 35px;
+            padding: 5px;
+            margin-right: 15px;
+            img {
+                width: 20px;
+                height: 20px;
+                object-fit: contain;
+            }
+        }
+    }
+}
+
+
+.filter {
+    .card-body {
+        border-bottom: 1.5px solid $color-primary;
+    }
+    &-form {
+        padding: 0 15px;
+        background: #EEF3FC;
+        input {
+            background: unset;
+            border: unset;
+            &:focus {
+                background: unset;
+                box-shadow: unset;
+            }
+        }
+    }
+}
+
+.pagination-wrap {
+    .page-item {
+        margin: 0 6px;
+        &:first-child .page-link, &:last-child .page-link {
+            border-radius: unset;
+        }
+        .page-link {
+            color: $color-primary;
+            border: 1px solid $color-primary;
+            &.active {
+                color: $color-white;
+               background: $color-primary;
+            }
+        }
+    }
+}
+
+.about-coupons {
+    h2 {
+        font-size: 27px;
+        font-weight: 500;
+    }
+}
+
+.filter {
+    .categories-list {
+        display: none;
+        .form-check {
+           
+            &-input {
+                padding: 8px;
+                border-radius: 2px;
+                background-color: #edebeb;
+                border: unset;
+                &:checked {
+                    border-color: $color-primary;
+                    background-color: $color-primary;
+                }
+            }
+        }
+    }
+}
+
+
+.discount-modal {
+    .offer-head {
+        &-img {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 60px;
+            width: 140px;
+            background-image: url("data:image/svg+xml,%3csvg width='100%25' height='100%25' xmlns='http://www.w3.org/2000/svg'%3e%3crect width='100%25' height='100%25' fill='none' stroke='%23002B5EFF' stroke-width='5' stroke-dasharray='6%2c 14' stroke-dashoffset='0' stroke-linecap='square'/%3e%3c/svg%3e");
+        }
+    }
+    .offer-mid {
+        &-code {
+            display: flex;
+            align-items: center;
+            height: 47px;
+            width: 81%;
+            padding: 15px;
+            background-image: url("data:image/svg+xml,%3csvg width='100%25' height='100%25' xmlns='http://www.w3.org/2000/svg'%3e%3crect width='100%25' height='100%25' fill='none' stroke='%23333' stroke-width='5' stroke-dasharray='6%2c 14' stroke-dashoffset='0' stroke-linecap='square'/%3e%3c/svg%3e");
+            background-color: #EEF3FC;
+            @media only screen and (max-width: 767px) {
+                width: 70%;
+            }
+        }
+        .copy-code {
+            margin-left: -60px;
+        }
+    }
+}

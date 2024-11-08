@@ -1,0 +1,820 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coupons</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/owl.carousel.min.css">
+    <link rel="stylesheet" href="./css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="./scss/style.css">
+</head>
+
+<body>
+
+    <header>
+        <nav>
+            <div class="navbar-top d-none d-md-block">
+                <div class="container">
+                    <div class="offer d-flex justify-content-center align-items-center flex-wrap">
+                        <p class="font-12 font-700 mb-2 mb-md-0 me-3">Hurry up to get 30% off everything </p>
+                        <div class="offer-code d-flex me-3 mb-2 mb-md-0">
+                            <p class="font-12 font-700 mb-0 me-3">code: COFFEELOVER</p>
+                            <a href="javascript:void(0)" class="font-12 mb-0 font-600 text-underline text-dark"><i
+                                    class="fa fa-copy me-1" aria-hidden="true"></i><span
+                                    class="text-decoration-underline">Copy code</span></a>
+                        </div>
+                        <div class="offer-timer mb-2 mb-md-0">
+                            <p class="font-500 font-12 mb-0">ONLY &nbsp;&nbsp;<span class="hours font-700">01
+                                    &nbsp;</span>h
+                                &nbsp;&nbsp;<span class="minutes font-700">08 &nbsp;</span>m &nbsp;&nbsp;<span
+                                    class="seconds font-700">59 &nbsp;</span>s &nbsp;&nbsp; LEFT</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="navbar navbar-expand-md p-0">
+                <div class="nav-menu d-flex align-items-center justify-content-start justify-content-md-between">
+                    <div class="togglebtn-white d-flex align-items-center">
+                        <button class="navbar-toggler collapsed p-0 me-4 border-0" type="button"
+                            data-bs-toggle="collapse" data-bs-target="#navbarContent" aria-controls="navbarContent"
+                            aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="d-flex align-items-center"><img src="./images/hamburger.svg" alt="hamburger"
+                                    class="img-fluid hamburger1"></span>
+                        </button>
+                        <a class="navbar-brand p-0" href="index.html">Navbar</a>
+                    </div>
+                    <div class="d-flex ms-auto">
+                        <div class="d-block d-md-none">
+                            <a class="nav-icon text-white me-4" href="javascript:void(0)"><img src="./images/heart.svg"
+                                    alt="heart" class="img-fluid"></a>
+                            <a class="nav-icon text-white" id="searchBtn"><img src="./images/search.svg" alt="search"
+                                    class="img-fluid"></a>
+                        </div>
+                    </div>
+                    <div class="collapse navbar-collapse" id="navbarContent">
+                        <div class="togglebtn-blue d-flex align-items-center">
+                            <button class="navbar-toggler p-0 me-4 border-0" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false"
+                                aria-label="Toggle navigation">
+                                <span class="d-flex align-items-center"><img src="./images/hamburger_show.svg"
+                                        alt="hamburger" class="img-fluid hamburger2"></span>
+                            </button>
+                            <a class="navbar-brand p-0" href="index.html">Navbar</a>
+                        </div>
+                        <ul class="navbar-nav ms-auto">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="allbrands.html">All Brands</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="categories.html">Categories</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="coupons.html">Coupons</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="javascript:void(0)">Newsletter</a>
+                            </li>
+                            <li class="nav-item d-md-none">
+                                <a class="nav-link" href="javascript:void(0)">
+                                    <img src="./images/smiling_woman.jpg" alt="discount image" class="img-fluid w-100">
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="search-wrap d-md-none" id="searchWrap">
+                <div class="form-search mb-4">
+                    <form>
+                        <div class="d-flex align-items-center search-input">
+                            <a href="javascript:void(0)">
+                                <i class="fa fa-search" aria-hidden="true"></i>
+                            </a>
+                            <input type="text" class="form-control ps-0"
+                                placeholder="Search For Amazon, Flipkart, Pizza etc." id="search" aria-label="search"
+                                aria-describedby="search">
+                            <a href="javascript:void(0)" id="searchClose">
+                                <i class="fa fa-close" aria-hidden="true"></i>
+                            </a>
+                        </div>
+                    </form>
+                </div>
+                <div class="popular-brands mb-3">
+                    <div class="d-flex justify-content-between px-3">
+                        <h2 class="d-block d-md-none">Popular Brands</h2>
+                        <a href="javascript:void(0)" class="color-blue d-block d-md-none">See all</a>
+                    </div>
+                    <div class="row popular-brands-wrapper">
+                        <div class="col-md-6 mb-2">
+                            <a href="javascript:void(0)" class="popular-brands-blog">
+                                <img src="./images/amazon.svg" alt="Amazon" class="img-fluid">
+                                <div class="popular-brands-blog-desc text-center p-2">
+                                    <span class="font-12">Amazon</span>
+                                    <span class="d-block font-12 coupon-border">3+ Coupons Available</span>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-md-6 mb-2">
+                            <a href="javascript:void(0)" class="popular-brands-blog">
+                                <img src="./images/adobe.svg" alt="Adobe" class="img-fluid">
+                                <div class="popular-brands-blog-desc text-center p-2">
+                                    <span class="font-12">Adobe</span>
+                                    <span class="d-block font-12 coupon-border">3+ Coupons Available</span>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-md-6 mb-2">
+                            <a href="javascript:void(0)" class="popular-brands-blog">
+                                <img src="./images/4wp.svg" alt="4wp" class="img-fluid">
+                                <div class="popular-brands-blog-desc text-center p-2">
+                                    <span class="font-12">4wp</span>
+                                    <span class="d-block font-12 coupon-border">3+ Coupons Available</span>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-md-6 mb-2">
+                            <a href="javascript:void(0)" class="popular-brands-blog">
+                                <img src="./images/accu.svg" alt="Accu" class="img-fluid">
+                                <div class="popular-brands-blog-desc text-center p-2">
+                                    <span class="font-12">Accu</span>
+                                    <span class="d-block font-12 coupon-border">3+ Coupons Available</span>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-md-6 mb-2">
+                            <a href="javascript:void(0)" class="popular-brands-blog">
+                                <img src="./images/ali_express.svg" alt="Ali Express" class="img-fluid">
+                                <div class="popular-brands-blog-desc text-center p-2">
+                                    <span class="font-12">Ali Express</span>
+                                    <span class="d-block font-12 coupon-border">3+ Coupons Available</span>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-md-6 mb-2">
+                            <a href="javascript:void(0)" class="popular-brands-blog">
+                                <img src="./images/lego.svg" alt="Lego" class="img-fluid">
+                                <div class="popular-brands-blog-desc text-center p-2">
+                                    <span class="font-12">Lego</span>
+                                    <span class="d-block font-12 coupon-border">3+ Coupons Available</span>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-md-6 mb-2">
+                            <a href="javascript:void(0)" class="popular-brands-blog">
+                                <img src="./images/adidas.svg" alt="Adidas" class="img-fluid">
+                                <div class="popular-brands-blog-desc text-center p-2">
+                                    <span class="font-12">Adidas</span>
+                                    <span class="d-block font-12 coupon-border">3+ Coupons Available</span>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-md-6 mb-2">
+                            <a href="javascript:void(0)" class="popular-brands-blog">
+                                <img src="./images/apple.svg" alt="Apple" class="img-fluid">
+                                <div class="popular-brands-blog-desc text-center p-2">
+                                    <span class="font-12">Apple</span>
+                                    <span class="d-block font-12 coupon-border">3+ Coupons Available</span>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-md-6 mb-2">
+                            <a href="javascript:void(0)" class="popular-brands-blog">
+                                <img src="./images/KFC.svg" alt="KFC" class="img-fluid">
+                                <div class="popular-brands-blog-desc text-center p-2">
+                                    <span class="font-12">KFC</span>
+                                    <span class="d-block font-12 coupon-border">3+ Coupons Available</span>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-md-6 mb-2">
+                            <a href="javascript:void(0)" class="popular-brands-blog">
+                                <img src="./images/Canva.svg" alt="Canva" class="img-fluid">
+                                <div class="popular-brands-blog-desc text-center p-2">
+                                    <span class="font-12">Canva</span>
+                                    <span class="d-block font-12 coupon-border">3+ Coupons Available</span>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-md-6 mb-2">
+                            <a href="javascript:void(0)" class="popular-brands-blog">
+                                <img src="./images/4MD_Medical.svg" alt="4MD Medical" class="img-fluid">
+                                <div class="popular-brands-blog-desc text-center p-2">
+                                    <span class="font-12">4MD Medical</span>
+                                    <span class="d-block font-12 coupon-border">3+ Coupons Available</span>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-md-6 mb-2">
+                            <a href="javascript:void(0)" class="popular-brands-blog">
+                                <img src="./images/99_Design.svg" alt="99 Design" class="img-fluid">
+                                <div class="popular-brands-blog-desc text-center p-2">
+                                    <span class="font-12">99 Design</span>
+                                    <span class="d-block font-12 coupon-border">3+ Coupons Available</span>
+                                </div>
+                            </a>
+                        </div>
+
+                    </div>
+                    <div class="d-none d-md-block text-center">
+                        <a href="javascript:void(0)" class="color-blue">See all</a>
+                    </div>
+                </div>
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="allbrands.html">All Brands</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="categories.html">Categories</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="coupons.html">Coupons</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="javascript:void(0)">Newsletter</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <div class="search-bg">
+                <div class="row justify-content-center">
+                    <div class="col-md-6">
+                        <div class="form-search">
+                            <form>
+                                <div class="d-flex align-items-center search-input">
+                                    <a href="javascript:void(0)">
+                                        <i class="fa fa-search" aria-hidden="true"></i>
+                                    </a>
+                                    <input type="text" class="form-control ps-0"
+                                        placeholder="Search For Amazon, Flipkart, Pizza etc." id="search"
+                                        aria-label="search" aria-describedby="search">
+                                    <a href="javascript:void(0)">
+                                        <i class="fa fa-sliders" aria-hidden="true"></i>
+                                    </a>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="container">
+                <div class="row mb-4">
+                    <div class="col-md-9">
+                        <div class="brands-wrapper mb-5">
+                            <h2>All Brands</h2>
+                            <ul
+                                class="brands-letter d-flex align-items-center justify-content-md-between flex-wrap p-0">
+                                <li class="mb-2">
+                                    <a href="javascript:void(0)">
+                                        A
+                                    </a>
+                                </li>
+                                <li class="mb-2">
+                                    <a href="javascript:void(0)">
+                                        B
+                                    </a>
+                                </li>
+                                <li class="mb-2">
+                                    <a href="javascript:void(0)">
+                                        C
+                                    </a>
+                                </li>
+                                <li class="mb-2">
+                                    <a href="javascript:void(0)">
+                                        D
+                                    </a>
+                                </li>
+                                <li class="mb-2">
+                                    <a href="javascript:void(0)">
+                                        E
+                                    </a>
+                                </li>
+                                <li class="mb-2">
+                                    <a href="javascript:void(0)">
+                                        F
+                                    </a>
+                                </li>
+                                <li class="mb-2">
+                                    <a href="javascript:void(0)">
+                                        G
+                                    </a>
+                                </li>
+                                <li class="mb-2">
+                                    <a href="javascript:void(0)">
+                                        H
+                                    </a>
+                                </li>
+                                <li class="mb-2">
+                                    <a href="javascript:void(0)">
+                                        I
+                                    </a>
+                                </li>
+                                <li class="mb-2">
+                                    <a href="javascript:void(0)">
+                                        J
+                                    </a>
+                                </li>
+                                <li class="mb-2">
+                                    <a href="javascript:void(0)">
+                                        K
+                                    </a>
+                                </li>
+                                <li class="mb-2">
+                                    <a href="javascript:void(0)">
+                                        L
+                                    </a>
+                                </li>
+                                <li class="mb-2">
+                                    <a href="javascript:void(0)">
+                                        M
+                                    </a>
+                                </li>
+                                <li class="mb-2">
+                                    <a href="javascript:void(0)">
+                                        N
+                                    </a>
+                                </li>
+                                <li class="mb-2">
+                                    <a href="javascript:void(0)">
+                                        O
+                                    </a>
+                                </li>
+                                <li class="mb-2">
+                                    <a href="javascript:void(0)">
+                                        P
+                                    </a>
+                                </li>
+                                <li class="mb-2">
+                                    <a href="javascript:void(0)">
+                                        Q
+                                    </a>
+                                </li>
+                                <li class="mb-2">
+                                    <a href="javascript:void(0)">
+                                        R
+                                    </a>
+                                </li>
+                                <li class="mb-2">
+                                    <a href="javascript:void(0)">
+                                        S
+                                    </a>
+                                </li>
+                                <li class="mb-2">
+                                    <a href="javascript:void(0)">
+                                        T
+                                    </a>
+                                </li>
+                                <li class="mb-2">
+                                    <a href="javascript:void(0)">
+                                        U
+                                    </a>
+                                </li>
+                                <li class="mb-2">
+                                    <a href="javascript:void(0)">
+                                        V
+                                    </a>
+                                </li>
+                                <li class="mb-2">
+                                    <a href="javascript:void(0)">
+                                        W
+                                    </a>
+                                </li>
+                                <li class="mb-2">
+                                    <a href="javascript:void(0)">
+                                        X
+                                    </a>
+                                </li>
+                                <li class="mb-2">
+                                    <a href="javascript:void(0)">
+                                        Y
+                                    </a>
+                                </li>
+                                <li class="mb-2">
+                                    <a href="javascript:void(0)">
+                                        Z
+                                    </a>
+                                </li>
+                                <li class="mb-2">
+                                    <a href="javascript:void(0)" class="text-decoration-none">
+                                        0-9
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="brands-list mb-4">
+                            <h6>Brands - A</h6>
+                            <div class="row">
+                                <div class="col-md-2 text-center mb-2">
+                                    <a href="javascript:void(0)" class="brands-list-cta">
+                                        <img src="./images/brands_list.jpg" alt="brands_list" class="img-fluid w-100">
+                                        <h6>Amazon</h6>
+                                    </a>
+                                </div>
+                                <div class="col-md-2 text-center mb-2">
+                                    <a href="javascript:void(0)" class="brands-list-cta">
+                                        <img src="./images/brands_list.jpg" alt="brands_list" class="img-fluid w-100">
+                                        <h6>Amazon</h6>
+                                    </a>
+                                </div>
+                                <div class="col-md-2 text-center mb-2">
+                                    <a href="javascript:void(0)" class="brands-list-cta">
+                                        <img src="./images/brands_list.jpg" alt="brands_list" class="img-fluid w-100">
+                                        <h6>Amazon</h6>
+                                    </a>
+                                </div>
+                                <div class="col-md-2 text-center mb-2">
+                                    <a href="javascript:void(0)" class="brands-list-cta">
+                                        <img src="./images/brands_list.jpg" alt="brands_list" class="img-fluid w-100">
+                                        <h6>Amazon</h6>
+                                    </a>
+                                </div>
+                                <div class="col-md-2 text-center mb-2">
+                                    <a href="javascript:void(0)" class="brands-list-cta">
+                                        <img src="./images/brands_list.jpg" alt="brands_list" class="img-fluid w-100">
+                                        <h6>Amazon</h6>
+                                    </a>
+                                </div>
+                                <div class="col-md-2 text-center mb-2">
+                                    <a href="javascript:void(0)" class="brands-list-cta">
+                                        <img src="./images/brands_list.jpg" alt="brands_list" class="img-fluid w-100">
+                                        <h6>Amazon</h6>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="brands-list mb-4">
+                            <h6>Brands - B</h6>
+                            <div class="row">
+                                <div class="col-md-2 text-center mb-2">
+                                    <a href="javascript:void(0)" class="brands-list-cta">
+                                        <img src="./images/brands_list.jpg" alt="brands_list" class="img-fluid w-100">
+                                        <h6>Amazon</h6>
+                                    </a>
+                                </div>
+                                <div class="col-md-2 text-center mb-2">
+                                    <a href="javascript:void(0)" class="brands-list-cta">
+                                        <img src="./images/brands_list.jpg" alt="brands_list" class="img-fluid w-100">
+                                        <h6>Amazon</h6>
+                                    </a>
+                                </div>
+                                <div class="col-md-2 text-center mb-2">
+                                    <img src="./images/brands_list.jpg" alt="brands_list" class="img-fluid w-100">
+                                    <h6>Amazon</h6>
+                                </div>
+                                <div class="col-md-2 text-center mb-2">
+                                    <img src="./images/brands_list.jpg" alt="brands_list" class="img-fluid w-100">
+                                    <h6>Amazon</h6>
+                                </div>
+                                <div class="col-md-2 text-center mb-2">
+                                    <img src="./images/brands_list.jpg" alt="brands_list" class="img-fluid w-100">
+                                    <h6>Amazon</h6>
+                                </div>
+                                <div class="col-md-2 text-center mb-2">
+                                    <img src="./images/brands_list.jpg" alt="brands_list" class="img-fluid w-100">
+                                    <h6>Amazon</h6>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="brands-list mb-4">
+                            <h6>Brands - C</h6>
+                            <div class="row">
+                                <div class="col-md-2 text-center mb-2">
+                                    <img src="./images/brands_list.jpg" alt="brands_list" class="img-fluid w-100">
+                                    <h6>Amazon</h6>
+                                </div>
+                                <div class="col-md-2 text-center mb-2">
+                                    <img src="./images/brands_list.jpg" alt="brands_list" class="img-fluid w-100">
+                                    <h6>Amazon</h6>
+                                </div>
+                                <div class="col-md-2 text-center mb-2">
+                                    <img src="./images/brands_list.jpg" alt="brands_list" class="img-fluid w-100">
+                                    <h6>Amazon</h6>
+                                </div>
+                                <div class="col-md-2 text-center mb-2">
+                                    <img src="./images/brands_list.jpg" alt="brands_list" class="img-fluid w-100">
+                                    <h6>Amazon</h6>
+                                </div>
+                                <div class="col-md-2 text-center mb-2">
+                                    <img src="./images/brands_list.jpg" alt="brands_list" class="img-fluid w-100">
+                                    <h6>Amazon</h6>
+                                </div>
+                                <div class="col-md-2 text-center mb-2">
+                                    <img src="./images/brands_list.jpg" alt="brands_list" class="img-fluid w-100">
+                                    <h6>Amazon</h6>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="filter d-none d-md-block mb-5">
+                            <div class="card border-0">
+                                <div class="card-body">
+                                    <div class="d-flex justify-content-between mb-3">
+                                        <h6 class="font-600 mb-0">Filter</h6>
+                                        <a href="javascript:void(0)" class="">Clear All</a>
+                                    </div>
+                                    <form>
+                                        <div class="filter-form d-flex align-items-center">
+                                            <i class="fa-solid fa-search" aria-hidden="true"></i>
+                                            <input type="email" class="form-control" id="email"
+                                                aria-describedby="emailHelp" placeholder="Search in filters">
+                                        </div>
+                                    </form>
+                                </div>
+                                <a href="javascript:void(0)"
+                                    class="d-flex align-items-center justify-content-between color-blue px-3 py-2 mb-2"
+                                    id="categories">
+                                    Categories <i class="fa fa-angle-right" aria-hidden="true" id="arrowDown"></i>
+                                </a>
+                                <div class="categories-list" id="categoriesList">
+                                    <div class="row categories-list-desc align-items-center mb-3">
+                                        <div class="col-md-4 pe-0">
+                                            <img src="./images/ecommerce.jpg" alt="E-commerce & Shopping"
+                                                class="img-fluid">
+                                        </div>
+                                        <div class="col-md-5">
+                                            <p class="mb-0">E-commerce & Shopping</p>
+                                        </div>
+                                        <div class="col-md-3 d-flex justify-content-center">
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" value="" id="flexCheck"
+                                                    checked>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row categories-list-desc align-items-center mb-3">
+                                        <div class="col-md-4 pe-0">
+                                            <img src="./images/technology.jpg" alt="Electronics & Technology"
+                                                class="img-fluid">
+                                        </div>
+                                        <div class="col-md-5">
+                                            <p class="mb-0">Electronics & Technology</p>
+                                        </div>
+                                        <div class="col-md-3 d-flex justify-content-center">
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" value="" id="flexCheck">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row categories-list-desc align-items-center mb-3">
+                                        <div class="col-md-4 pe-0">
+                                            <img src="./images/fashion.jpg" alt="Fashion & Apparel" class="img-fluid">
+                                        </div>
+                                        <div class="col-md-5">
+                                            <p class="mb-0">Fashion & Apparel</p>
+                                        </div>
+                                        <div class="col-md-3 d-flex justify-content-center">
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" value="" id="flexCheck">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row categories-list-desc align-items-center mb-3">
+                                        <div class="col-md-4 pe-0">
+                                            <img src="./images/games_cat.jpg" alt="Games" class="img-fluid">
+                                        </div>
+                                        <div class="col-md-5">
+                                            <p class="mb-0">Games</p>
+                                        </div>
+                                        <div class="col-md-3 d-flex justify-content-center">
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" value="" id="flexCheck">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row categories-list-desc align-items-center mb-3">
+                                        <div class="col-md-4 pe-0">
+                                            <img src="./images/petsanimal.jpg" alt="Pets & Animals" class="img-fluid">
+                                        </div>
+                                        <div class="col-md-5">
+                                            <p class="mb-0">Pets & Animals</p>
+                                        </div>
+                                        <div class="col-md-3 d-flex justify-content-center">
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" value="" id="flexCheck">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row categories-list-desc align-items-center mb-3">
+                                        <div class="col-md-4 pe-0">
+                                            <img src="./images/traveltourism.jpg" alt="Travel &
+                                            Tourism" class="img-fluid">
+                                        </div>
+                                        <div class="col-md-5">
+                                            <p class="mb-0">Travel &
+                                                Tourism</p>
+                                        </div>
+                                        <div class="col-md-3 d-flex justify-content-center">
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" value="" id="flexCheck">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="favourite-coupons mb-4">
+                            <h2 class="text-center box-shadow mb-4 d-none d-md-block">Favourite Coupons</h2>
+                            <div class="d-flex justify-content-between">
+                                <h2 class="d-block d-md-none mb-4">Favourite Coupons</h2>
+                                <a href="javascript:void(0)" class="d-block d-md-none color-blue">Get Code</a>
+                            </div>
+                            <div class="favourite-coupons-carousel owl-carousel owl-theme">
+                                <a href="javascript:void(0)" class="coupons-blog d-block" style="background: #F13005;">
+                                    <div class="row h-100 align-items-center">
+                                        <div class="col-4 position-relative h-100 text-end">
+                                            <div
+                                                class="coupons-blog-left h-100 d-flex justify-content-end align-items-center">
+                                                <img src="./images/mcdonalds_coupon.svg" alt="McDonalds"
+                                                    class="img-fluid ps-2">
+                                            </div>
+                                        </div>
+                                        <div class="col-8">
+                                            <div class="coupons-blog-mid text-white">
+                                                <h2 class="font-600 mb-0">$10</h2>
+                                                <p class="mb-2">McDonalds</p>
+                                                <p class="font-10 mb-1">Valid until 01 February 2023</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                                <a href="javascript:void(0)" class="coupons-blog d-block"
+                                    style="background-color: #144EB4;">
+                                    <div class="row h-100 align-items-center">
+                                        <div class="col-4 position-relative h-100 text-end">
+                                            <div
+                                                class="coupons-blog-left h-100 d-flex justify-content-end align-items-center">
+                                                <img src="./images/amazon_coupon.svg" alt="amazon"
+                                                    class="img-fluid ps-2">
+                                            </div>
+                                        </div>
+                                        <div class="col-8">
+                                            <div class="coupons-blog-mid text-white">
+                                                <h2 class="font-600 mb-0">$12</h2>
+                                                <p class="mb-2">Amazon</p>
+                                                <p class="font-10 mb-1">Valid until 02 February 2023</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                                <a href="javascript:void(0)" class="coupons-blog d-block"
+                                    style="background-color: #FF0029;">
+                                    <div class="row h-100 align-items-center">
+                                        <div class="col-4 position-relative h-100 text-end">
+                                            <div
+                                                class="coupons-blog-left h-100 d-flex justify-content-end align-items-center">
+                                                <img src="./images/kfc_coupon.svg" alt="KFC" class="img-fluid ps-2">
+                                            </div>
+                                        </div>
+                                        <div class="col-8">
+                                            <div class="coupons-blog-mid text-white">
+                                                <h2 class="font-600 mb-0">$19</h2>
+                                                <p class="mb-2">KFC</p>
+                                                <p class="font-10 mb-1">Valid until 02 April 2023</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <img src="./images/fav_coupons.jpg" alt="favourite coupons"
+                                class="img-fluid mt-n28 mb-5 w-100 pb-3 pb-md-0">
+                            <div class="text-center d-none d-md-block">
+                                <a href="javascript:void(0)" class="color-blue">Get Code</a>
+                            </div>
+                        </div>
+                        <div class="thanks-giving">
+                            <img src="./images/thanks_giving.jpg" alt="thanks giving sale" class="img-fluid w-100">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4 mb-3">
+                        <div class="footer-about">
+                            <h2 class="mb-3">YOUR LOGO</h2>
+                            <p class="color-blue font-400">Some footer text about the Website. Just a little description
+                                to
+                                help people understand you
+                                better</p>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-2">
+                        <div class="footer-links">
+                            <h6 class="mb-3">Quick Links</h6>
+                            <ul class="p-0">
+                                <li class="">
+                                    <a href="javascript:void(0)" class="active">
+                                        Home
+                                    </a>
+                                </li>
+                                <li class="">
+                                    <a href="javascript:void(0)">
+                                        All Brands
+                                    </a>
+                                </li>
+                                <li class="">
+                                    <a href="javascript:void(0)">
+                                        Categories
+                                    </a>
+                                </li>
+                                <li class="">
+                                    <a href="javascript:void(0)">
+                                        Coupons
+                                    </a>
+                                </li>
+                                <li class="">
+                                    <a href="javascript:void(0)">
+                                        About Us
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-2">
+                        <div class="footer-links">
+                            <h6 class="mb-3">Legal</h6>
+                            <ul class="p-0">
+                                <li class="">
+                                    <a href="javascript:void(0)">
+                                        Contact
+                                    </a>
+                                </li>
+                                <li class="">
+                                    <a href="javascript:void(0)">
+                                        Privacy Policies
+                                    </a>
+                                </li>
+                                <li class="">
+                                    <a href="javascript:void(0)">
+                                        Terms & Conditions
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mt-3">
+                        <form>
+                            <div class="subcribe-input footer-input mb-3">
+                                <label for="email" class="form-label color-blue font-400">Sign up for coupons and
+                                    more</label>
+                                <div class="d-flex align-items-center">
+                                    <input type="email" class="form-control" id="email" aria-describedby="emailHelp"
+                                        placeholder="Enter your email here">
+                                    <a href="javascript:void(0)">
+                                        <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom text-center">
+            <p class="mb-0 text-black-50">Copyright © 2023 web</p>
+        </div>
+    </footer>
+
+    <script type="text/javascript" src="./js/jquery-3.6.1.min.js"></script>
+    <script type="text/javascript" src="./js/bootstrap.bundle.js"></script>
+    <script type="text/javascript" src="./js/owl.carousel.min.js"></script>
+    <script type="text/javascript" src="./js/custom.js"></script>
+
+    <script>
+        let dropdown = document.getElementById("categories");
+        let categoriesList = document.getElementById("categoriesList")
+        let arrowDown = document.getElementById("arrowDown")
+        dropdown.addEventListener('click', function () {
+            categoriesList.classList.toggle('d-block');
+            if (arrowDown.classList.contains("fa-angle-right")) {
+                arrowDown.classList.remove("fa-angle-right");
+                arrowDown.classList.add("fa-angle-down");
+            }
+            else {
+                arrowDown.classList.add("fa-angle-right");
+                arrowDown.classList.remove("fa-angle-down");
+            }
+        }); 
+    </script>
+
+</body>
+
+</html>

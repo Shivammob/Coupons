@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+
+    <style>
+        body {
+            background-color: #181028;
+        }
+
+        .circle {
+            border: 2px solid white;
+            border-radius: 50%;
+            box-shadow: 0 0 10px white;
+            pointer-events: none;
+            position: fixed;
+            top: -10rem;
+            left: -10rem;
+            height: 2rem;
+            width: 2rem;
+            transition: transform 0.4s, background 0.4s;
+        }
+
+    
+    </style>
+</head>
+
+<body>
+    <div id="circle" class="circle"></div>
+ 
+
+        <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+            integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+        <script>
+
+            const circle = document.getElementById('circle');
+
+
+            document.addEventListener('mousemove', (e) => {
+                const height = circle.offsetHeight;
+                const width = circle.offsetWidth;
+
+                if (e.target.tagName === 'A' ||
+                    e.target.tagName === 'BUTTON' ||
+                    e.target.parentNode.tagName === 'BUTTON') {
+                    circle.classList.add('big');
+                } else {
+                    circle.classList.remove('big');
+                }
+
+                setTimeout(() => {
+         
+                    circle.style.left = `${e.pageX - width / 2}px`;
+                    circle.style.top = `${e.pageY - height / 2}px`;
+                }, 20);
+            });
+        </script>
+</body>
+
+</html>

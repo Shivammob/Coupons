@@ -1,0 +1,444 @@
+.hero {
+  position: relative;
+  height: 400px;
+  background-image: url(../images/banner_desktop_bg.png);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  margin-bottom: 35px;
+  // border-bottom: 13px solid $color-yellow;
+  @media only screen and (min-width: 1600px) {
+    height: 500px;
+  }
+  @media only screen and (max-width: 767px) {
+    background-image: url(../images/banner_mobile_bg.png);
+    padding: 30px 0;
+    height: 100%;
+    margin-top: -2px;
+  }
+  // &:before, &:after {
+  //   content: "";
+  //   position: absolute;
+  //   width: 25%;
+  //   height: 70%;
+  //   @media only screen and (max-width: 767px) {
+  //     display: none;
+  //   }
+  // }
+  // &:before {
+  //   bottom: -12px;
+  //   left: 0;
+  //   background: url(../images/left_girl.png) no-repeat;
+  //   background-size: contain;
+  // }
+  // &:after {
+  //   bottom: -6px;
+  //   right: 0;
+  //   background: url(../images/right_girl.png) no-repeat;
+  //   background-size: contain;
+  //   right: 0;
+  //   width: 18%;
+  // }
+
+  &-heading {
+    color: $color-white;
+    margin-top: 5%;
+    // margin-left: 7%;
+
+    .featured-carousel {
+      &-slide {
+        position: relative;
+        &:before, &:after {
+          content: "";
+          position: absolute;
+          top: 22%;
+          width: 30px;
+          height: 30px;
+          background-color: #002b5e;
+          border-radius: 100%;
+          z-index: 999;
+        }
+        &:before {
+          left: -15px;
+        }
+        &:after {
+          right: -15px;
+        }
+        .card {
+          &-body {
+            position: relative;
+            img {
+              width: 85px;
+              height: 57px;
+              // border-bottom: 2px dashed $color-primary;
+            }
+            &:after {
+              content: "";
+              position: absolute;
+              top: 68%;
+              left: 0;
+              width: 100%;
+              height: 1.3px;
+              background-image: linear-gradient(to right, #002B5E 0%, #002B5E 50%, transparent 50%);
+              background-size: 17px 1px;
+              background-repeat: repeat;
+            }
+          }
+        }
+      }
+      .owl-nav {
+        .owl-prev, .owl-next {
+          position: absolute;
+          top: 30%;
+        }
+        .owl-prev:hover, .owl-next:hover {
+          background: unset;
+        }
+       .owl-prev {
+        left: -5%;
+       }
+       .owl-next {
+        right: -5%;
+       }
+      }
+    }
+
+    p {
+      margin-bottom: 4%;
+      @media only screen and (max-width: 767px) {
+        margin-bottom: 9%;
+      }
+    }
+
+    .discount-offer {
+      span.count {
+        font-size: 23px;
+        font-weight: 500;
+        @media only screen and (max-width: 767px) {
+          font-size: 14px;
+        }
+      }
+
+      p {
+        line-height: 1.3;
+        @media only screen and (max-width: 767px) {
+          font-size: 12px;
+        }
+      }
+    }
+  }
+}
+
+
+.coupons {
+  &-blog {
+    position: relative;
+    height: 100px;
+
+    &:before,
+    &:after {
+      content: "";
+      position: absolute;
+      top: 36%;
+      width: 30px;
+      height: 30px;
+      background-color: $color-white;
+      border-radius: 100%;
+    }
+
+    &:before {
+      left: -15px;
+    }
+
+    &:after {
+      right: -15px;
+    }
+
+    &-left {
+      &:after {
+        content: "";
+        position: absolute;
+        bottom: 48px;
+        width: 88%;
+        right: -40px;
+        height: 2px;
+        background-image: linear-gradient(to right, #ffffff 0%, #ffffff 51%, transparent 96%);
+        background-size: 12px 1px;
+        background-repeat: repeat;
+        transform: rotate(90deg);
+        opacity: 0.6;
+        @media screen and (max-width: 991px) and (min-width: 768px) {
+          right: -32px;
+        }
+      }
+    }
+
+    &-mid {
+      .ratings {
+        img {
+          width: 22px;
+          height: 22px;
+        }
+      }
+    }
+
+    &-right {
+      background-color: #0000003d;
+    }
+  }
+}
+
+
+.custom-carousel {
+  .owl-nav {
+    position: absolute;
+    margin: 0;
+    top: -56px;
+    right: 0;
+
+    button.owl-prev,
+    button.owl-next {
+      border: 1px solid $color-primary;
+      border-radius: 0;
+      padding: 3px 10px !important;
+
+      &:hover {
+        background: $color-primary;
+      }
+    }
+  }
+}
+
+.hot-coupons {
+  &-carousel {
+    &-slide {
+      .card-top {
+        @media only screen and (min-width: 768px) {
+          height: 65px;
+        }
+      }
+      .card-mid {
+        position: relative;
+
+        &:after {
+          content: "";
+          position: absolute;
+          bottom: 0;
+          left: 0;
+          width: 100%;
+          // border-bottom: 2px dashed $color-primary;
+          height: 1px;
+          background-image: linear-gradient(to right, $color-primary 0%, $color-primary 50%, transparent 50%);
+          background-size: 18px 1px;
+          background-repeat: repeat;
+        }
+      }
+    }
+    .owl-stage {
+      @media only screen and (max-width: 767px) {
+        transform: unset !important;
+        width: 100% !important;
+      }
+    }
+  }
+}
+
+.most-popular {
+  &.card {
+    position: relative;
+  }
+
+
+
+  &:before {
+    content: "";
+    position: absolute;
+    top: -8px;
+    left: -8px;
+    width: 45%;
+    height: 45%;
+    background: url(../images/most_popular.png) no-repeat;
+  }
+}
+
+
+
+.explore-categories {
+  &-carousel {
+    &-slide {
+      .explore-cat {
+        &:hover {
+          svg {
+            path {
+              fill: $color-active;
+            }
+            circle {
+              stroke: $color-active;
+            }
+            g {
+              rect {
+                fill: $color-active;
+              }
+            }
+          }
+          .bg-effect {
+            position: relative;
+            &:after {
+              content: "";
+              position: absolute;
+              top: 0;
+              left: 0;
+              width: 100%;
+              height: 100%;
+              background: #0000009e;
+            }
+          }
+        }
+      }
+      h6 {
+        color: $color-white;
+        background-color: $color-primary;
+        padding: 12px;
+        margin-bottom: 0;
+      }
+
+      .card-mid {
+        .center-img {
+          display: block;
+        }
+        .center-img-hover {
+          display: none;
+        }
+        .center-img, .center-img-hover {
+          position: absolute;
+          top: 20%;
+          left: 0;
+          right: 0;
+          margin: 0 auto;
+          z-index: 1;
+          width: 36px;
+          height: 36px;
+        }
+        &:hover {
+          .center-img {
+            display: none;
+          }
+          .center-img-hover {
+            display: block;
+            box-shadow: 0px 0px 4px 0px #FEDD00;
+            border-radius: 20px;
+          }
+        }
+      }
+    }
+  }
+}
+
+.popular-brands {
+  &-blog {
+    position: relative;
+    &-desc {
+      display: none;
+      position: absolute;
+      top: -32px;
+      left: 0;
+      right: 0;
+      width: 100%;
+      background: $color-primary;
+      color: #fff;
+      @media only screen and (max-width: 767px) {
+        top: 0;
+      }
+      .coupon-border {
+        border: 1px dashed #ffffff;
+        padding: 4px;
+      }
+    }
+     &:hover {
+      .popular-brands-blog-desc {
+        display: block;
+      }
+     }
+  }
+}
+
+.favourite-coupons {
+  &-carousel, .fav-carousel {
+    &.owl-carousel {
+      .owl-dots {
+        margin: 0;
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: -140px;
+        @media screen and (max-width: 991px) and (min-width: 768px) {
+          bottom: -12vw;
+        }
+        @media only screen and (max-width: 767px) {
+          bottom: -165px;
+        }
+        .owl-dot {
+          span {
+            width: 8px;
+            height: 8px;
+            margin: 5px 3px;
+          }
+        }
+      }
+    }
+  }
+}
+
+
+.subscribe {
+  &-detail {
+    position: absolute;
+    top: 50px;
+    left: 50px;
+    width: 390px;
+    @media only screen and (max-width: 767px) {
+      position: unset;
+      width: 100%;
+      box-shadow: 0px 0px 16px rgba(0,0,0,.1607843137);
+      padding: 25px;
+    }
+  }
+}
+
+.subcribe-input {
+  input {
+    height: 50px;
+    border-radius: 0;
+    &:focus {
+      box-shadow: none;
+    }
+  }
+  i {
+    color: $color-white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    padding: 10px;
+    background-color: #002B5EBF;
+  }
+  ::-webkit-input-placeholder { /* Edge */
+    color: #002B5E73;
+  }
+  
+  :-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: #002B5E73;
+  }
+  
+  ::placeholder {
+    color: #002B5E73;
+  }
+  &.footer-input {
+    input {
+      background: transparent;
+      border: 1px solid #002B5EBF;
+    }
+  }
+}
+
+

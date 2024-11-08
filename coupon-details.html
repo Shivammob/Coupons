@@ -1,0 +1,1623 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coupons</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/owl.carousel.min.css">
+    <link rel="stylesheet" href="./css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="./scss/style.css">
+</head>
+
+<body>
+
+    <header>
+        <nav>
+            <div class="navbar-top d-none d-md-block">
+                <div class="container">
+                    <div class="offer d-flex justify-content-center align-items-center flex-wrap">
+                        <p class="font-12 font-700 mb-2 mb-md-0 me-3">Hurry up to get 30% off everything</p>
+                        <div class="offer-code d-flex me-3 mb-2 mb-md-0">
+                            <p class="font-12 font-700 mb-0 me-3">code: COFFEELOVER</p>
+                            <a href="javascript:void(0)" class="font-12 mb-0 font-600 text-underline text-dark"><i class="fa fa-copy me-1"
+                                    aria-hidden="true"></i><span class="text-decoration-underline">Copy code</span></a>
+                        </div>
+                        <div class="offer-timer mb-2 mb-md-0">
+                            <p class="font-500 font-12 mb-0">ONLY &nbsp;&nbsp;<span class="hours font-700">01
+                                    &nbsp;</span>h
+                                &nbsp;&nbsp;<span class="minutes font-700">08 &nbsp;</span>m &nbsp;&nbsp;<span
+                                    class="seconds font-700">59 &nbsp;</span>s &nbsp;&nbsp; LEFT</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="navbar navbar-expand-md p-0">
+                <div class="nav-menu d-flex align-items-center justify-content-start justify-content-md-between">
+                    <div class="togglebtn-white d-flex align-items-center">
+                        <button class="navbar-toggler collapsed p-0 me-4 border-0" type="button"
+                            data-bs-toggle="collapse" data-bs-target="#navbarContent" aria-controls="navbarContent"
+                            aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="d-flex align-items-center"><img src="./images/hamburger.svg" alt="hamburger"
+                                    class="img-fluid hamburger1"></span>
+                        </button>
+                        <a class="navbar-brand p-0" href="index.html">Navbar</a>
+                    </div>
+                    <div class="d-flex ms-auto">
+                        <div class="d-block d-md-none">
+                            <a class="nav-icon text-white me-4" href="javascript:void(0)"><img src="./images/heart.svg"
+                                    alt="heart" class="img-fluid"></a>
+                            <a class="nav-icon text-white" id="searchBtn"><img src="./images/search.svg" alt="search"
+                                    class="img-fluid"></a>
+                        </div>
+                    </div>
+                    <div class="collapse navbar-collapse" id="navbarContent">
+                        <div class="togglebtn-blue d-flex align-items-center">
+                            <button class="navbar-toggler p-0 me-4 border-0" type="button"
+                                data-bs-toggle="collapse" data-bs-target="#navbarContent" aria-controls="navbarContent"
+                                aria-expanded="false" aria-label="Toggle navigation">
+                                <span class="d-flex align-items-center"><img src="./images/hamburger_show.svg"
+                                        alt="hamburger" class="img-fluid hamburger2"></span>
+                            </button>
+                            <a class="navbar-brand p-0" href="index.html">Navbar</a>
+                        </div>
+                        <ul class="navbar-nav ms-auto">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="allbrands.html">All Brands</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="categories.html">Categories</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="coupons.html">Coupons</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="javascript:void(0)">Newsletter</a>
+                            </li>
+                            <li class="nav-item d-md-none">
+                                <a class="nav-link" href="javascript:void(0)">
+                                    <img src="./images/smiling_woman.jpg" alt="discount image" class="img-fluid w-100">
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="search-wrap d-md-none" id="searchWrap">
+                <div class="form-search mb-4">
+                    <form>
+                        <div class="d-flex align-items-center search-input">
+                            <a href="javascript:void(0)">
+                                <i class="fa fa-search" aria-hidden="true"></i>
+                            </a>
+                            <input type="text" class="form-control ps-0"
+                                placeholder="Search For Amazon, Flipkart, Pizza etc." id="search" aria-label="search"
+                                aria-describedby="search">
+                            <a href="javascript:void(0)" id="searchClose">
+                                <i class="fa fa-close" aria-hidden="true"></i>
+                            </a>
+                        </div>
+                    </form>
+                </div>
+                <div class="popular-brands mb-3">
+                    <div class="d-flex justify-content-between px-3">
+                        <h2 class="d-block d-md-none">Popular Brands</h2>
+                        <a href="javascript:void(0)" class="color-blue d-block d-md-none">See all</a>
+                    </div>
+                    <div class="row popular-brands-wrapper">
+                        <div class="col-md-6 mb-2">
+                            <a href="javascript:void(0)" class="popular-brands-blog">
+                                <img src="./images/amazon.svg" alt="Amazon" class="img-fluid">
+                                <div class="popular-brands-blog-desc text-center p-2">
+                                    <span class="font-12">Amazon</span>
+                                    <span class="d-block font-12 coupon-border">3+ Coupons Available</span>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-md-6 mb-2">
+                            <a href="javascript:void(0)" class="popular-brands-blog">
+                                <img src="./images/adobe.svg" alt="Adobe" class="img-fluid">
+                                <div class="popular-brands-blog-desc text-center p-2">
+                                    <span class="font-12">Adobe</span>
+                                    <span class="d-block font-12 coupon-border">3+ Coupons Available</span>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-md-6 mb-2">
+                            <a href="javascript:void(0)" class="popular-brands-blog">
+                                <img src="./images/4wp.svg" alt="4wp" class="img-fluid">
+                                <div class="popular-brands-blog-desc text-center p-2">
+                                    <span class="font-12">4wp</span>
+                                    <span class="d-block font-12 coupon-border">3+ Coupons Available</span>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-md-6 mb-2">
+                            <a href="javascript:void(0)" class="popular-brands-blog">
+                                <img src="./images/accu.svg" alt="Accu" class="img-fluid">
+                                <div class="popular-brands-blog-desc text-center p-2">
+                                    <span class="font-12">Accu</span>
+                                    <span class="d-block font-12 coupon-border">3+ Coupons Available</span>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-md-6 mb-2">
+                            <a href="javascript:void(0)" class="popular-brands-blog">
+                                <img src="./images/ali_express.svg" alt="Ali Express" class="img-fluid">
+                                <div class="popular-brands-blog-desc text-center p-2">
+                                    <span class="font-12">Ali Express</span>
+                                    <span class="d-block font-12 coupon-border">3+ Coupons Available</span>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-md-6 mb-2">
+                            <a href="javascript:void(0)" class="popular-brands-blog">
+                                <img src="./images/lego.svg" alt="Lego" class="img-fluid">
+                                <div class="popular-brands-blog-desc text-center p-2">
+                                    <span class="font-12">Lego</span>
+                                    <span class="d-block font-12 coupon-border">3+ Coupons Available</span>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-md-6 mb-2">
+                            <a href="javascript:void(0)" class="popular-brands-blog">
+                                <img src="./images/adidas.svg" alt="Adidas" class="img-fluid">
+                                <div class="popular-brands-blog-desc text-center p-2">
+                                    <span class="font-12">Adidas</span>
+                                    <span class="d-block font-12 coupon-border">3+ Coupons Available</span>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-md-6 mb-2">
+                            <a href="javascript:void(0)" class="popular-brands-blog">
+                                <img src="./images/apple.svg" alt="Apple" class="img-fluid">
+                                <div class="popular-brands-blog-desc text-center p-2">
+                                    <span class="font-12">Apple</span>
+                                    <span class="d-block font-12 coupon-border">3+ Coupons Available</span>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-md-6 mb-2">
+                            <a href="javascript:void(0)" class="popular-brands-blog">
+                                <img src="./images/KFC.svg" alt="KFC" class="img-fluid">
+                                <div class="popular-brands-blog-desc text-center p-2">
+                                    <span class="font-12">KFC</span>
+                                    <span class="d-block font-12 coupon-border">3+ Coupons Available</span>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-md-6 mb-2">
+                            <a href="javascript:void(0)" class="popular-brands-blog">
+                                <img src="./images/Canva.svg" alt="Canva" class="img-fluid">
+                                <div class="popular-brands-blog-desc text-center p-2">
+                                    <span class="font-12">Canva</span>
+                                    <span class="d-block font-12 coupon-border">3+ Coupons Available</span>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-md-6 mb-2">
+                            <a href="javascript:void(0)" class="popular-brands-blog">
+                                <img src="./images/4MD_Medical.svg" alt="4MD Medical" class="img-fluid">
+                                <div class="popular-brands-blog-desc text-center p-2">
+                                    <span class="font-12">4MD Medical</span>
+                                    <span class="d-block font-12 coupon-border">3+ Coupons Available</span>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-md-6 mb-2">
+                            <a href="javascript:void(0)" class="popular-brands-blog">
+                                <img src="./images/99_Design.svg" alt="99 Design" class="img-fluid">
+                                <div class="popular-brands-blog-desc text-center p-2">
+                                    <span class="font-12">99 Design</span>
+                                    <span class="d-block font-12 coupon-border">3+ Coupons Available</span>
+                                </div>
+                            </a>
+                        </div>
+
+                    </div>
+                    <div class="d-none d-md-block text-center">
+                        <a href="javascript:void(0)" class="color-blue">See all</a>
+                    </div>
+                </div>
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="allbrands.html">All Brands</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="categories.html">Categories</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="coupons.html">Coupons</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="javascript:void(0)">Newsletter</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <div class="search-bg mb-0">
+                <div class="row justify-content-center">
+                    <div class="col-md-6">
+                        <div class="form-search">
+                            <form>
+                                <div class="d-flex align-items-center search-input">
+                                    <a href="javascript:void(0)">
+                                        <i class="fa fa-search" aria-hidden="true"></i>
+                                    </a>
+                                    <input type="text" class="form-control ps-0"
+                                        placeholder="Search For Amazon, Flipkart, Pizza etc." id="search"
+                                        aria-label="search" aria-describedby="search">
+                                    <a href="javascript:void(0)">
+                                        <i class="fa fa-sliders" aria-hidden="true"></i>
+                                    </a>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="position-relative">
+            <div class="turbo d-md-none">
+                <div class="card mb-4 border-0">
+                    <div class="card-body px-4">
+                        <div class="favourite d-flex justify-content-end align-items-end mb-4">
+                            <a href="javascript:void(0)"><img src="./images/favorite.svg" alt="favorite"
+                                    class="img-fluid me-4"></a>
+                            <div class="dropdown kebab-dropdown">
+                                <a class="" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                    <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                    <li><a class="dropdown-item" href="javascript:void(0)">Share</a></li>
+                                    <li><a class="dropdown-item" href="javascript:void(0)">Rate This</a></li>
+                                    <li><a class="dropdown-item" href="javascript:void(0)">Add to Wishlist</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <img src="./images/turbotax.jpg" alt="turbotax"
+                            class="img-fluid d-block w-75 mx-md-auto mb-4 pb-2">
+                        <div class="d-flex align-items-center mb-2">
+                            <div class="ratings d-flex align-items-center me-2">
+                                <img src="./images/star.svg" alt="star" class="img-fluid">
+                                <img src="./images/star.svg" alt="star" class="img-fluid">
+                                <img src="./images/star.svg" alt="star" class="img-fluid">
+                                <img src="./images/star.svg" alt="star" class="img-fluid">
+                                <img src="./images/star.svg" alt="star" class="img-fluid">
+                            </div>
+                            <div class="rates"><span class="color-blue">4/5</span> Rating</div>
+                        </div>
+
+                        <div class="d-none d-md-block">
+                            <div class="rate d-flex align-items-center justify-content-center"><img
+                                    src="./images/grey_star.svg" alt="rate this" class="img-fluid me-1"> Rate This
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="promo-code mb-4">
+                <div class="container">
+                    <h1 class="coupons color-blue">TurboTax Promo Codes Today</h1>
+                    <p class="mb-3 d-none d-md-block">TurboTax is a software package for preparation of American income
+                        tax returns,
+                        produced.</p>
+                    <div class="promo-code-wrap d-flex align-items-center flex-wrap">
+                        <div class="d-none d-md-block">
+                            <div class="promo-code-wrap-time d-flex align-items-center me-4">
+                                <img src="./images/access_time.svg" alt="time update" class="img-fluid me-2">
+                                <h5 class="color-blue">19 hours ago <span class="font-14">Updated</span></h5>
+                            </div>
+                        </div>
+                        <div class="promo-code-wrap-status d-flex align-items-center me-4">
+                            <img src="./images/active_coupons.svg" alt="active coupons" class="img-fluid me-2">
+                            <h5 class="color-blue">15 <span class="font-14">Active Coupons</span></h5>
+                        </div>
+                        <div class="d-none d-md-block">
+                            <div class="promo-code-wrap-expired d-flex align-items-center me-4">
+                                <img src="./images/expired_coupons.svg" alt="expired coupons" class="img-fluid me-2">
+                                <h5 class="color-blue">10 <span class="font-14">Expired Coupons </span></h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-9">
+                        <nav>
+                            <div class="nav nav-coupons" id="nav-tab" role="tablist">
+                                <a href="javascript:void(0)" class="nav-link active">All Coupons <span>(11)</span></a>
+                                <a href="javascript:void(0)" class="nav-link">Promo Codes <span>(1)</span></a>
+                                <a href="javascript:void(0)" class="nav-link">Lorem Ipsum <span>(8)</span></a>
+                                <a href="javascript:void(0)" class="nav-link">Lorem Ipsum <span>(2)</span></a>
+                            </div>
+                        </nav>
+                        <div class="rewards-program">
+                            <div class="rewards-program-card mb-3">
+                                <div class="row">
+                                    <div class="col-md-2">
+                                        <div class="rewards-program-card-left h-100"><span
+                                                class="me-2 me-md-0">20%</span> off</div>
+                                    </div>
+                                    <div class="col-md-6 col-xl-7">
+                                        <div class="rewards-program-card-mid">
+                                            <h2 class="font-500 mb-3">20% Off Coupon | Denny's Rewards Program
+                                            </h2>
+                                            <p class="mb-0">Denny's is offering 20% off your next visit
+                                                when you
+                                                join their
+                                                Rewards Program! You will get this coupon within 24-48 hours
+                                                after signing up... join their
+                                                Rewards Program! You will get this coupon within 24-48 hours
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div
+                                        class="col-md-4 col-xl-3 text-center d-flex flex-column justify-content-center">
+                                        <div class="p-3 px-md-0">
+                                            <button type="button" class="btn btn-coupon mb-2" data-bs-toggle="modal"
+                                                data-bs-target="#couponModal">
+                                                <span class="getcode">Get Coupon Code</span>
+                                                <span class="hcode">COUPO10FAB</span>
+                                            </button>
+                                            <a href="javascript:void(0)" class="d-block color-blue"><span><img
+                                                        src="./images/check.svg" alt="verified"
+                                                        class="img-fluid me-1"></span>Coupon verified</a>
+                                            <span class="text-black-50">5 left</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="rewards-program-card mb-3">
+                                <div class="row">
+                                    <div class="col-md-2">
+                                        <div class="rewards-program-card-left h-100"><span
+                                                class="me-2 me-md-0">5%</span> off</div>
+                                    </div>
+                                    <div class="col-md-6 col-xl-7">
+                                        <div class="rewards-program-card-mid">
+                                            <h2 class="font-500 mb-3">Extra $5 Off $25</h2>
+                                            <p class="mb-0">Denny's is offering 20% off your next visit when you
+                                                join their
+                                                Rewards Program! You will get this coupon within 24-48 hours
+                                                after signing up...
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div
+                                        class="col-md-4 col-xl-3 text-center d-flex flex-column justify-content-center">
+                                        <div class="p-3 px-md-0">
+                                            <button type="button" class="btn btn-coupon mb-2">
+                                                <span class="getcode">Get Coupon Code</span>
+                                                <span class="hcode">COUPO10FAB</span>
+                                            </button>
+                                            <a href="javascript:void(0)" class="d-block color-blue"><span><img
+                                                        src="./images/check.svg" alt="verified"
+                                                        class="img-fluid me-1"></span>Coupon verified</a>
+                                            <span class="text-black-50">5 left</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="rewards-program-card mb-3">
+                                <div class="row">
+                                    <div class="col-md-2">
+                                        <div class="rewards-program-card-left h-100"><span
+                                                class="me-2 me-md-0">20%</span> off</div>
+                                    </div>
+                                    <div class="col-md-6 col-xl-7">
+                                        <div class="rewards-program-card-mid">
+                                            <h2 class="font-500 mb-3">20% Off Coupon | Denny's Rewards Program
+                                            </h2>
+                                            <p class="mb-0">Denny's is offering 20% off your next visit when you
+                                                join their
+                                                Rewards Program! You will get this coupon within 24-48 hours
+                                                after signing up...
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div
+                                        class="col-md-4 col-xl-3 text-center d-flex flex-column justify-content-center">
+                                        <div class="p-3 px-md-0">
+                                            <button type="button" class="btn btn-coupon mb-2">
+                                                <span class="getcode">Get Coupon Code</span>
+                                                <span class="hcode">COUPO10FAB</span>
+                                            </button>
+                                            <a href="javascript:void(0)" class="d-block color-blue"><span><img
+                                                        src="./images/check.svg" alt="verified"
+                                                        class="img-fluid me-1"></span>Coupon verified</a>
+                                            <span class="text-black-50">5 left</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="rewards-program-card mb-3">
+                                <div class="row">
+                                    <div class="col-md-2">
+                                        <div class="rewards-program-card-left h-100"><span
+                                                class="me-2 me-md-0">5%</span> off</div>
+                                    </div>
+                                    <div class="col-md-6 col-xl-7">
+                                        <div class="rewards-program-card-mid">
+                                            <h2 class="font-500 mb-3">Extra $5 Off $25</h2>
+                                            <p class="mb-0">Denny's is offering 20% off your next visit when you
+                                                join their
+                                                Rewards Program! You will get this coupon within 24-48 hours
+                                                after signing up...
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div
+                                        class="col-md-4 col-xl-3 text-center d-flex flex-column justify-content-center">
+                                        <div class="p-3 px-md-0">
+                                            <button type="button" class="btn btn-coupon mb-2">
+                                                <span class="getcode">Get Coupon Code</span>
+                                                <span class="hcode">COUPO10FAB</span>
+                                            </button>
+                                            <a href="javascript:void(0)" class="d-block color-blue"><span><img
+                                                        src="./images/check.svg" alt="verified"
+                                                        class="img-fluid me-1"></span>Coupon verified</a>
+                                            <span class="text-black-50">5 left</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="pagination-wrap d-flex justify-content-end mb-5">
+                            <nav aria-label="Page navigation">
+                                <ul class="pagination">
+                                    <li class="page-item">
+                                        <a class="page-link" href="#" aria-label="Previous">
+                                            <i class="fa fa-angle-left" aria-hidden="true"></i>
+                                        </a>
+                                    </li>
+                                    <li class="page-item"><a class="page-link active" href="#">1</a></li>
+                                    <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                    <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                    <li class="page-item">
+                                        <a class="page-link" href="#" aria-label="Next">
+                                            <i class="fa fa-angle-right" aria-hidden="true"></i>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </nav>
+                        </div>
+                        <div class="about-coupons mb-5">
+                            <h2 class="mb-3">About TurboTax</h2>
+                            <p>Lorem ipsum dolor sit amet consectetur. Tristique fermentum placerat turpis amet sapien
+                                nisl nulla. Congue et enim aliquam bibendum turpis bibendum quis. Faucibus sagittis
+                                tellus feugiat ut tincidunt natoque aliquet nunc dis. Consequat aenean pharetra gravida
+                                odio tincidunt sed blandit. Rhoncus eget vulputate interdum risus et quis enim quisque
+                                tempor. Vitae eu in sociis a massa sit. Pellentesque nunc ac odio in.
+                            </p>
+                            <p> Sapien nunc ultrices integer adipiscing. Quam sed dolor nibh lectus. Vulputate nullam
+                                sit convallis eu. Porttitor nunc ut enim dolor lacinia eget. Est id ullamcorper lacus
+                                tempor vitae aliquet. Sapien egestas lorem mauris lacus a purus non congue pellentesque.
+                                A ipsum ullamcorper libero eget at arcu ultrices. Tristique porta purus elementum massa
+                                ultricies mauris vitae. Neque nisi mauris turpis curabitur diam consectetur vel massa
+                                turpis. Tortor turpis rutrum cras in lorem. Ut massa at cursus id neque. Etiam molestie
+                                et magna et urna odio urna. Semper quam purus in erat.</p>
+                        </div>
+                        <div class="popular-brands mb-5 d-md-none">
+                            <h2 class="text-center box-shadow mb-3 d-none d-md-block">Popular Brands</h2>
+                            <div class="d-flex justify-content-between">
+                                <h2 class="d-block d-md-none">Popular Brands</h2>
+                                <a href="javascript:void(0)" class="color-blue d-block d-md-none">See all</a>
+                            </div>
+                            <div class="row popular-brands-wrapper">
+                                <div class="col-md-6 mb-2">
+                                    <a href="javascript:void(0)" class="popular-brands-blog">
+                                        <img src="./images/amazon.svg" alt="Amazon" class="img-fluid">
+                                        <div class="popular-brands-blog-desc text-center p-2">
+                                            <span class="font-12">Amazon</span>
+                                            <span class="d-block font-12 coupon-border">3+ Coupons Available</span>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-md-6 mb-2">
+                                    <a href="javascript:void(0)" class="popular-brands-blog">
+                                        <img src="./images/adobe.svg" alt="Adobe" class="img-fluid">
+                                        <div class="popular-brands-blog-desc text-center p-2">
+                                            <span class="font-12">Adobe</span>
+                                            <span class="d-block font-12 coupon-border">3+ Coupons Available</span>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-md-6 mb-2">
+                                    <a href="javascript:void(0)" class="popular-brands-blog">
+                                        <img src="./images/4wp.svg" alt="4wp" class="img-fluid">
+                                        <div class="popular-brands-blog-desc text-center p-2">
+                                            <span class="font-12">4wp</span>
+                                            <span class="d-block font-12 coupon-border">3+ Coupons Available</span>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-md-6 mb-2">
+                                    <a href="javascript:void(0)" class="popular-brands-blog">
+                                        <img src="./images/accu.svg" alt="Accu" class="img-fluid">
+                                        <div class="popular-brands-blog-desc text-center p-2">
+                                            <span class="font-12">Accu</span>
+                                            <span class="d-block font-12 coupon-border">3+ Coupons Available</span>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-md-6 mb-2">
+                                    <a href="javascript:void(0)" class="popular-brands-blog">
+                                        <img src="./images/ali_express.svg" alt="Ali Express" class="img-fluid">
+                                        <div class="popular-brands-blog-desc text-center p-2">
+                                            <span class="font-12">Ali Express</span>
+                                            <span class="d-block font-12 coupon-border">3+ Coupons Available</span>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-md-6 mb-2">
+                                    <a href="javascript:void(0)" class="popular-brands-blog">
+                                        <img src="./images/lego.svg" alt="Lego" class="img-fluid">
+                                        <div class="popular-brands-blog-desc text-center p-2">
+                                            <span class="font-12">Lego</span>
+                                            <span class="d-block font-12 coupon-border">3+ Coupons Available</span>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-md-6 mb-2">
+                                    <a href="javascript:void(0)" class="popular-brands-blog">
+                                        <img src="./images/adidas.svg" alt="Adidas" class="img-fluid">
+                                        <div class="popular-brands-blog-desc text-center p-2">
+                                            <span class="font-12">Adidas</span>
+                                            <span class="d-block font-12 coupon-border">3+ Coupons Available</span>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-md-6 mb-2">
+                                    <a href="javascript:void(0)" class="popular-brands-blog">
+                                        <img src="./images/apple.svg" alt="Apple" class="img-fluid">
+                                        <div class="popular-brands-blog-desc text-center p-2">
+                                            <span class="font-12">Apple</span>
+                                            <span class="d-block font-12 coupon-border">3+ Coupons Available</span>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-md-6 mb-2">
+                                    <a href="javascript:void(0)" class="popular-brands-blog">
+                                        <img src="./images/KFC.svg" alt="KFC" class="img-fluid">
+                                        <div class="popular-brands-blog-desc text-center p-2">
+                                            <span class="font-12">KFC</span>
+                                            <span class="d-block font-12 coupon-border">3+ Coupons Available</span>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-md-6 mb-2">
+                                    <a href="javascript:void(0)" class="popular-brands-blog">
+                                        <img src="./images/Canva.svg" alt="Canva" class="img-fluid">
+                                        <div class="popular-brands-blog-desc text-center p-2">
+                                            <span class="font-12">Canva</span>
+                                            <span class="d-block font-12 coupon-border">3+ Coupons Available</span>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-md-6 mb-2">
+                                    <a href="javascript:void(0)" class="popular-brands-blog">
+                                        <img src="./images/4MD_Medical.svg" alt="4MD Medical" class="img-fluid">
+                                        <div class="popular-brands-blog-desc text-center p-2">
+                                            <span class="font-12">4MD Medical</span>
+                                            <span class="d-block font-12 coupon-border">3+ Coupons Available</span>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-md-6 mb-2">
+                                    <a href="javascript:void(0)" class="popular-brands-blog">
+                                        <img src="./images/99_Design.svg" alt="99 Design" class="img-fluid">
+                                        <div class="popular-brands-blog-desc text-center p-2">
+                                            <span class="font-12">99 Design</span>
+                                            <span class="d-block font-12 coupon-border">3+ Coupons Available</span>
+                                        </div>
+                                    </a>
+                                </div>
+
+                            </div>
+                            <div class="d-none d-md-block text-center">
+                                <a href="javascript:void(0)" class="color-blue">See all</a>
+                            </div>
+                        </div>
+                        <div class="explore-categories mb-5">
+                            <h2 class="mb-4">Explore More On E-commerce & Shopping</h2>
+                            <div
+                                class="explore-categories-carousel custom-carousel owl-carousel owl-theme mb-4 mb-md-0">
+                                <div class="explore-categories-carousel-slide">
+                                    <div class="row">
+                                        <div class="col-md-4 mb-4">
+                                            <a href="javascript:void(0)" class="explore-cat">
+                                                <div class="card border-0 text-center">
+                                                    <div class="card-body p-0">
+                                                        <div class="card-top">
+                                                            <h6 class="font-600">Amazon</h6>
+                                                        </div>
+                                                        <div class="card-mid mb-1 position-relative">
+                                                            <div class="bg-effect">
+                                                                <img src="./images/amazon_logo.jpg"
+                                                                    alt="E-commerce & Shopping" class="img-fluid">
+                                                            </div>
+                                                        </div>
+                                                        <div class="card-bottom mb-1">
+                                                            <span class="btn btn-outline">3+ Coupons
+                                                                Available</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="col-md-4 mb-4">
+                                            <a href="javascript:void(0)" class="explore-cat">
+                                                <div class="card border-0 text-center">
+                                                    <div class="card-body p-0">
+                                                        <div class="card-top">
+                                                            <h6 class="font-600">Amazon</h6>
+                                                        </div>
+                                                        <div class="card-mid mb-1 position-relative">
+                                                            <div class="bg-effect">
+                                                                <img src="./images/amazon_logo.jpg"
+                                                                    alt="E-commerce & Shopping" class="img-fluid">
+                                                            </div>
+                                                        </div>
+                                                        <div class="card-bottom mb-1">
+                                                            <span class="btn btn-outline">3+ Coupons
+                                                                Available</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="col-md-4 mb-4">
+                                            <a href="javascript:void(0)" class="explore-cat">
+                                                <div class="card border-0 text-center">
+                                                    <div class="card-body p-0">
+                                                        <div class="card-top">
+                                                            <h6 class="font-600">Amazon</h6>
+                                                        </div>
+                                                        <div class="card-mid mb-1 position-relative">
+                                                            <div class="bg-effect">
+                                                                <img src="./images/amazon_logo.jpg"
+                                                                    alt="E-commerce & Shopping" class="img-fluid">
+                                                            </div>
+                                                        </div>
+                                                        <div class="card-bottom mb-1">
+                                                            <span class="btn btn-outline">3+ Coupons
+                                                                Available</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="col-md-4 mb-4">
+                                            <a href="javascript:void(0)" class="explore-cat">
+                                                <div class="card border-0 text-center">
+                                                    <div class="card-body p-0">
+                                                        <div class="card-top">
+                                                            <h6 class="font-600">Amazon</h6>
+                                                        </div>
+                                                        <div class="card-mid mb-1 position-relative">
+                                                            <div class="bg-effect">
+                                                                <img src="./images/amazon_logo.jpg"
+                                                                    alt="E-commerce & Shopping" class="img-fluid">
+                                                            </div>
+                                                        </div>
+                                                        <div class="card-bottom mb-1">
+                                                            <span class="btn btn-outline">3+ Coupons
+                                                                Available</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="col-md-4 mb-4">
+                                            <a href="javascript:void(0)" class="explore-cat">
+                                                <div class="card border-0 text-center">
+                                                    <div class="card-body p-0">
+                                                        <div class="card-top">
+                                                            <h6 class="font-600">Amazon</h6>
+                                                        </div>
+                                                        <div class="card-mid mb-1 position-relative">
+                                                            <div class="bg-effect">
+                                                                <img src="./images/amazon_logo.jpg"
+                                                                    alt="E-commerce & Shopping" class="img-fluid">
+                                                            </div>
+                                                        </div>
+                                                        <div class="card-bottom mb-1">
+                                                            <span class="btn btn-outline">3+ Coupons
+                                                                Available</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="col-md-4 mb-4">
+                                            <a href="javascript:void(0)" class="explore-cat">
+                                                <div class="card border-0 text-center">
+                                                    <div class="card-body p-0">
+                                                        <div class="card-top">
+                                                            <h6 class="font-600">Amazon</h6>
+                                                        </div>
+                                                        <div class="card-mid mb-1 position-relative">
+                                                            <div class="bg-effect">
+                                                                <img src="./images/amazon_logo.jpg"
+                                                                    alt="E-commerce & Shopping" class="img-fluid">
+                                                            </div>
+                                                        </div>
+                                                        <div class="card-bottom mb-1">
+                                                            <span class="btn btn-outline">3+ Coupons
+                                                                Available</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="explore-categories-carousel-slide">
+                                    <div class="row">
+                                        <div class="col-md-4 mb-4">
+                                            <a href="javascript:void(0)" class="explore-cat">
+                                                <div class="card border-0 text-center">
+                                                    <div class="card-body p-0">
+                                                        <div class="card-top">
+                                                            <h6 class="font-600">Amazon</h6>
+                                                        </div>
+                                                        <div class="card-mid mb-1 position-relative">
+                                                            <svg xmlns="http://www.w3.org/2000/svg" width="36"
+                                                                height="36" viewBox="0 0 36 36" fill="none"
+                                                                class="center-img">
+                                                                <circle cx="18" cy="18" r="17.25" stroke="white"
+                                                                    stroke-width="1.5" />
+                                                                <g clip-path="url(#clip0_2215_2986)">
+                                                                    <path
+                                                                        d="M13 24C11.9 24 11.01 24.9 11.01 26C11.01 27.1 11.9 28 13 28C14.1 28 15 27.1 15 26C15 24.9 14.1 24 13 24ZM7 9C7 9.55 7.45 10 8 10H9L12.6 17.59L11.25 20.03C10.52 21.37 11.48 23 13 23H24C24.55 23 25 22.55 25 22C25 21.45 24.55 21 24 21H13L14.1 19H21.55C22.3 19 22.96 18.59 23.3 17.97L26.88 11.48C27.25 10.82 26.77 10 26.01 10H11.21L10.54 8.57C10.38 8.22 10.02 8 9.64 8H8C7.45 8 7 8.45 7 9ZM23 24C21.9 24 21.01 24.9 21.01 26C21.01 27.1 21.9 28 23 28C24.1 28 25 27.1 25 26C25 24.9 24.1 24 23 24Z"
+                                                                        fill="white" />
+                                                                </g>
+                                                                <defs>
+                                                                    <clipPath id="clip0_2215_2986">
+                                                                        <rect width="24" height="24" fill="white"
+                                                                            transform="translate(6 6)" />
+                                                                    </clipPath>
+                                                                </defs>
+                                                            </svg>
+                                                            <div class="bg-effect">
+                                                                <img src="./images/ecommerce_shopping.jpg"
+                                                                    alt="E-commerce & Shopping" class="img-fluid">
+                                                            </div>
+                                                        </div>
+                                                        <div class="card-bottom mb-1">
+                                                            <span class="btn btn-outline">3+ Coupons
+                                                                Available</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="col-md-4 mb-4">
+                                            <a href="javascript:void(0)" class="explore-cat">
+                                                <div class="card border-0 text-center">
+                                                    <div class="card-body p-0">
+                                                        <div class="card-top">
+                                                            <h6 class="font-600">Electronics & Technology</h6>
+                                                        </div>
+                                                        <div class="card-mid mb-1 position-relative">
+                                                            <svg xmlns="http://www.w3.org/2000/svg" width="36"
+                                                                height="36" viewBox="0 0 36 36" fill="none"
+                                                                class="center-img">
+                                                                <circle cx="18" cy="18" r="17.25" stroke="white"
+                                                                    stroke-width="1.5" />
+                                                                <path
+                                                                    d="M26 24V23C27.1 23 27.99 22.1 27.99 21L28 11C28 9.9 27.1 9 26 9H10C8.9 9 8 9.9 8 11V21C8 22.1 8.9 23 10 23V24H7C6.45 24 6 24.45 6 25C6 25.55 6.45 26 7 26H29C29.55 26 30 25.55 30 25C30 24.45 29.55 24 29 24H26ZM11 11H25C25.55 11 26 11.45 26 12V20C26 20.55 25.55 21 25 21H11C10.45 21 10 20.55 10 20V12C10 11.45 10.45 11 11 11Z"
+                                                                    fill="white" />
+                                                            </svg>
+                                                            <div class="bg-effect">
+                                                                <img src="./images/electronics_technology.jpg"
+                                                                    alt="Electronics & Technology" class="img-fluid">
+                                                            </div>
+                                                        </div>
+                                                        <div class="card-bottom mb-1">
+                                                            <span class="btn btn-outline">3+ Coupons
+                                                                Available</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="col-md-4 mb-4">
+                                            <a href="javascript:void(0)" class="explore-cat">
+                                                <div class="card border-0 text-center">
+                                                    <div class="card-body p-0">
+                                                        <div class="card-top">
+                                                            <h6 class="font-600">Fashion and Apparel</h6>
+                                                        </div>
+                                                        <div class="card-mid mb-1 position-relative">
+                                                            <svg xmlns="http://www.w3.org/2000/svg"
+                                                                xmlns:xlink="http://www.w3.org/1999/xlink" width="36"
+                                                                height="36" viewBox="0 0 36 36" fill="none"
+                                                                class="center-img">
+                                                                <circle cx="18" cy="18" r="17.25" stroke="white"
+                                                                    stroke-width="1.5" />
+                                                                <mask id="mask0_2244_1196" style="mask-type:alpha"
+                                                                    maskUnits="userSpaceOnUse" x="8" y="8" width="20"
+                                                                    height="20">
+                                                                    <rect x="8" y="8" width="20" height="20"
+                                                                        fill="url(#pattern0)" />
+                                                                </mask>
+                                                                <g mask="url(#mask0_2244_1196)">
+                                                                    <rect x="8" y="9" width="20" height="18"
+                                                                        fill="white" />
+                                                                </g>
+                                                                <defs>
+                                                                    <pattern id="pattern0"
+                                                                        patternContentUnits="objectBoundingBox"
+                                                                        width="1" height="1">
+                                                                        <use xlink:href="#image0_2244_1196"
+                                                                            transform="scale(0.00195312)" />
+                                                                    </pattern>
+                                                                    <image id="image0_2244_1196" width="512"
+                                                                        height="512"
+                                                                        xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAgAAAAIACAMAAADDpiTIAAAAA3NCSVQICAjb4U/gAAAACXBIWXMAABf7AAAX+wHZaNC9AAAAGXRFWHRTb2Z0d2FyZQB3d3cuaW5rc2NhcGUub3Jnm+48GgAAAutQTFRF////AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQwohtgAAAPh0Uk5TAAECAwQFBgcICQoLDA0ODxAREhMUFRYXGBkaGxwdHh8gISMkJSYnKCkqKywtLi8wMTIzNDU2Nzg5Ojs8PT4/QEFCQ0RFRkhJSktMTU5PUFFSU1RVVldYWltcXV5fYGFiY2RlZmdoaWprbG1ub3BxcnN0dXZ3eHl6e3x9fn+AgYKDhIWGh4iJiouMjY6PkJGSk5SVlpeYmZqbnJ2en6ChoqOkpaanqKmrrK2ur7CxsrO0tba3uLm6u7y9vr/AwcLDxMXHycrLzM3Oz9DR0tPU1dbX2Nna29ze3+Dh4uPk5ebn6Onq6+zt7u/w8fLz9PX29/j5+vv8/f4k3Lk6AAAQEklEQVR42u3deYBO5R7A8WeYGTMYkuxU9qXr0mCU6rbJUt2uqG72SdbsazdRRBcpQgjRFZItrmKuGhoqQ5mxhcaMLYOxz8I7z5/XKLLMe95z3vecd855zvf7b71zzvk9HzPveZdzhCAiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIgq4kk8Mm7p4eu/HyjhhZ8s81nv64qnDnijJuplRkZjXPt2TK3/PM6eC3fe3whzPHzubu+fT12KKsIL+V6helxlbc+RNnR8VZuddDht1/ub9zdk6o0u9Qqyl4aq0mxB/TubXwhD77nXIwnx3+Vz8hHZVWFPdVY9d8Kv03iT77vkkjd3+dUHX6qytz39C9XouOSJ91Muue9/L154fXtyjLovs9U9+w/7L06WOjoTa8wBCj+jZ++PL+jbgScFti9946H9PS709b8+DeF73AWSsHhwdwqpfq1zHRenSSHHef1ZUn4aFrdvTwg37RHn/r3GGDuL4f14uw9qL0EfGbcuVBsut7P0HbpTn4kY9Wdz8PS3+5Ki4c3Kj9/+hsvHj+HFMs8JuXv27X11+RvpTV+8/s93V/+Fy4pQX7jXtl2zIvS9MSbx89Qe38/5/dfXrUDKWxlZ25eJHPDV5l/S3JRq/Ug5d/78ubF88+qUGRQPZy6INXhq9ePuF6z/ykMbzzyV+H07SxCdc9orhnZ1WXZQBdELjafTIW3/Ppqyb0rNVdCVDryCGVYpu1XPKupRbf6uP1HgeeyKQIzq/osMdbln9ir3+d0kGWLTGU8psL39wT+78ZtH7wzq3uL921QqlIm8hVCiyVIWqte9v0XnY+4u+2XnSy5/z7HLetxsd6DHlrOtRXv3VrzZkS64MvBEam1ioc95nj6ftS/rxx6R9acfP5uh7zEKNzY4w4bA8CQOrqrz69Uf/LM0pXmMrTaVlNdXYbLxJ29g+sp6aL/I+MGG/eSvh0XrmvMyq9V+msdHKHvO2s/fdJqq9TFRyWJq5azFcY2NVzlmz/ue03tEbbu62Dg6OUmj5K008a/Zi7NLa3mBrAAzW2uYus7d2erwqTwnrzsu2YDUaab28uMOK9d+h9R5UIws2mPVxLQWW/6Evcy355zhVa6PNLNhmbjOtLU615CA9K5o6/Jnf3zdb9YQsPVxrw3PN3+Bcre2Fp1t1nJuedu7zwfDY3dadkcnOWpsufczszR0rrbW9zhYeaHLnMEcuf8mhR6SVJWv+y4i5aO7WLsZo/qZLtvRQDw1y3ilBxQlnpMW11tyBtqY+Dchtq7mx1lYfa4bDTgnqzM2WlrdRex+Gmrmtodrb2mj90WbNrumY5W+2KlcGoxjt3Zht3pZma28pJiiH61nuiFOCkGcTZJBaob0noevN2tB6H59CXRGsI97Y2u6nBOFdd8ng9bCPp6HbzNnMNh/f8ns4iIec3MnOpwQlhhyWwSzRx8eri68xYytrfHzAsFBiUA86baBdTwkq/Pu0DHJdfexS4SmBb2OKr49tdg32UWeMs+MpQe052TLoHfX5j6HP5cC2cLmPry1EHQ3+cdvvlOCBlbmyIBrvc89aBvRG5NmWPjcwvkAO3LMsxkZP/J/5ThZQWb4/PVM/gM+h7K/v88fXyyqoY7fLKUF4552y4Er0/T3BiDF+/nHKHhPh84eHJhbgwSd1LPhTgqjBh2SBNlrHTtba4M9P3qDn3fjRBXv0aQOLF+jylx9/WhZwl6L17OjLht8dPPaynp8bfamgjz/jnXIFtvy1Ps6SBV+yri/V3DHd0N+B7Om6vqZRJNkGA8iaVaNAlr/pCo+0RR/o299yb+j+XGraGzr/VX1gjwl4ljUJ+hP/pzdJ29Re504XbqPrucCGNnq/sdvRPjOIbxXM5Q/rlCxtVGYj/e9Tf3hc+2cd/7CO7h/WJMtOUwjeKUHUoDRprw4ZeWm0bo/FXj6qdMTYFXwqHrbZGFIHBOOUoPy4DGm7NocbO4gasQsS9py4/hzGc2JPwoJYg0+linxvvzmcsvyUoObsLGnH5vvzolih0jUffPbZB2uW9ueaTYUW2XIQmTOtPCWIWeaRNm1qsJ8Gz7LrJDxfWHRKENJ6o7Rx44K7/u/ZeRbxLc0/4LCOSdLevR7M9X/L5sPY0cHcaykWH5gmbV/f4K3/EPtPI7W/eacE5d7JkE7odf7933RKMLasKUdbY1amdEizg3IN2dBPnDKPzJmBX566yRce6ZzWBuGVkKh1DhqIZ2njgA62Vbx0VomW31GkwnaHjeRbv08JwjrskI4r1eJvzzyQ6ryZ7Gjvz5/G4gMceKhXyhlg5Zuggy85cigH+xczeKRlx56STm2FZZfcvHO1Y4dyaoyRU4LqMzOlgzvQyJr1fzDVyVPJ/EjvKUHjpR7p7HLeiTB/+YtNuuzwseg7JWjxrVSg/c3NXv+nU1SYyzctfLzG0f5nqUifmfrOeMWlqszlZ41TgmL9Dkp1OtXPtGvwRww6o9BgDvbL/5Sg7JiTUq3SupvyKbnwXocVG8zJfE4Jqs3IlOp1oHPAt+Qp3CVFwcFkzqh201FGzvBINdvbM6DLKZTo9Yuig/HMiPzzMOslSXU7N7OBv8t//+zzCg8m6fo3q7tdlGq3pZMfvwZKdP1B8bFc7Pb7kT4n1S9rzSuGPh1RrtvabBeM5R9Xz3EOSFfk+W5gXV0fHg+pO/A7jztmkpL3POBN6Z4yvh7VvITm7/3mo77OcNFAxghxz0Xprjw7V07u06rOLe8WRNRp1Wfyyp0elw0jq7roLd1Z7snU3Vs3fbVs2Vebtu5OPZnr0jEMFJMlubgPxSqG4ObWiGSG4OZ2inSG4ObSxZcMwc2tFr0Ygpt7TVRlCG6ulhB7mYJ7SxFCDGIM7u1feR8GOcoc3NqJq2+T92MQbm3Y7++DHGYS7uz4Hx8P7sMo3Nmga5c8TGMWbuxY0WtvhvdgGG6s/59ffUhhGu7r8A2fienGONzXjTfECzvAPNxW2k1fnezCQNxWz5u/F76Pibirg+G2vfsJBaNut34JljcFXdWB2745/0+G4qZuv+96oV1MxT3tz+c6MS8yFvfUMb/vRCYxF7e0N98Lp7RlMG4p//sih/zEZNzRLi+3SXuO0bijF719Oz6R2bihJK/3SXyG4bihtt4vkPED01G/nzQulNOS8ajfc1rXyNnCfFQvUfMKWU8xINV7RvsaaQlMSO1+8HGRvMcZkdr5vIncRmakclt8XifzbwxJ5XTcSmcDU1K3BB2Xyn2IManb43oulryeOalavK5LpTdlUKr2iL6L5a9lUmq2Qe+tQxmVmjXTe7+M1cxKxdbpv1kSw1KxpvpvmbOCaanXWgP3TPprLvNSrkZG7pr1BfNSrS8N3TTvPn4FKFZuQ2O3TfyckanVcoP3zazjYWZK/QKob/TOqZ8xNJVaavjWubUuMzV18tQzfvPkTxmbOi32497p1S8xN2V+AdT2A4CYx+BUaaE/6y+q8itAkS7X9AuA+JjRqdF8/9Zf3JPD7FToUjU/AYiPGJ4KzfV3/UWVLKbn/HLu9RuAmMb4nN8s/9dfVMxkfk4v++4AAIgPGKDTmxHI+ovyF5mgs8uqHBAA8R4jdHZTA1t/UfYCM3RymRUCBCAmMEQn936g6y/uOscUnduFcgEDEOMYo3ObGPj6izvPMkendr6MCQDEGAbp1N41Y/3FHaeZpDM7W9oUAGIUo3RmY81Zf1HyFLN0YmdKmQRAvMEwndhos9ZfRJ1gms4ro6RpAMRwxum8Rpq3/qJ4OvN0WidLmAhADGGgTmuEmesviv7GRJ1VenFTAYgBge2OZ/MB1sRI+7YE+P38oeauv4g84v++nP68w11iJYtqpCWiTKelZ/x//G/FTAYg+vq5J3smPXr1TtUAMAjgSmGPT/7Fz8cPNHv9RcQh43uRHdev+rXHA8A4gLxqDtjgxxe0jkaaDkD0NvpL6JPno254OAD8A3ClEu3mHzf48H7mr78ITzWwA9vebnLL7QkB4DeAKxVqOna7gUcfjrAAgOiuc+sXVr1a6fZHAyAQAHlV7r5a74f0e1ux/iIsRcemU6a3zF8fAAIFkPdErNWMgzoenFrEEgCis4/tXk4Yfp/XBwPABAB51R+x2ddLBK8Ii/paY6MZS9prfv4EACYByPukdoclGRqPjQuxCkBFb58M2T3xb6E+HgsA8wBcKfTRSbu9PPRUJWFZzfN5bSp7fV89V6AAgKkA8qrWLy779keeaS4srPYtr0wdm9cmSt8jAWA6gLyP6rSZd+zmB/5SW1haqXHXPx2Um/hWY/1/bQBgBYArhTR5K/H6td1PjCslrC4ydn7CsdS4abEVDT0MABYBuPrkLHZaXOqxhPmxkcK2AcBCAE4IAAAgABAACAAEAAIAAYAAQAAgABAACAAEAAIAAYAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgABAACAAEAAIAAYAAQAAgABAACAAEAAIAAYAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgABAACAAEAAIAAYAAQAAgABAACAAEAAIAAYAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgABAACAAEAAIAuQrAHBbVSNOUA9CTRTVSF+UANGZRjfQX5QAUyWFV9XexsHIAxGaWVX8b1Ft/0egS66q37PoKAhBvs7B6e13F9Rdh21lZfX1fWEkAosZPrK2etlYVihb2Fs8DfJbzZqhQt4absllizad/mxoItQuP7j57JeXb7O7R4YKIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiOjG/g/ivnjrGyaLlAAAAABJRU5ErkJggg==" />
+                                                                </defs>
+                                                            </svg>
+                                                            <div class="bg-effect">
+                                                                <img src="./images/fashion_apparel.jpg"
+                                                                    alt="Fashion and Apparel" class="img-fluid">
+                                                            </div>
+                                                        </div>
+                                                        <div class="card-bottom mb-1">
+                                                            <span href="javascript:void(0)" class="btn btn-outline">3+
+                                                                Coupons
+                                                                Available</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="col-md-4 mb-4">
+                                            <a href="javascript:void(0)" class="explore-cat">
+                                                <div class="card border-0 text-center">
+                                                    <div class="card-body p-0">
+                                                        <div class="card-top">
+                                                            <h6 class="font-600">Games</h6>
+                                                        </div>
+                                                        <div class="card-mid mb-1 position-relative">
+                                                            <svg xmlns="http://www.w3.org/2000/svg" width="36"
+                                                                height="36" viewBox="0 0 36 36" fill="none"
+                                                                class="center-img">
+                                                                <circle cx="18" cy="18" r="17.25" stroke="white"
+                                                                    stroke-width="1.5" />
+                                                                <path
+                                                                    d="M21 13.29V9C21 8.45 20.55 8 20 8H16C15.45 8 15 8.45 15 9V13.29C15 13.42 15.05 13.55 15.15 13.64L17.65 16.14C17.85 16.34 18.16 16.34 18.36 16.14L20.86 13.64C20.95 13.55 21 13.43 21 13.29ZM13.29 15H9C8.45 15 8 15.45 8 16V20C8 20.55 8.45 21 9 21H13.29C13.42 21 13.55 20.95 13.64 20.85L16.14 18.35C16.34 18.15 16.34 17.84 16.14 17.64L13.64 15.14C13.55 15.05 13.43 15 13.29 15ZM15 22.71V27C15 27.55 15.45 28 16 28H20C20.55 28 21 27.55 21 27V22.71C21 22.58 20.95 22.45 20.85 22.36L18.35 19.86C18.15 19.66 17.84 19.66 17.64 19.86L15.14 22.36C15.05 22.45 15 22.57 15 22.71ZM22.35 15.15L19.85 17.65C19.65 17.85 19.65 18.16 19.85 18.36L22.35 20.86C22.44 20.95 22.57 21.01 22.7 21.01H27C27.55 21.01 28 20.56 28 20.01V16.01C28 15.46 27.55 15.01 27 15.01H22.71C22.57 15 22.45 15.05 22.35 15.15Z"
+                                                                    fill="white" />
+                                                            </svg>
+                                                            <div class="bg-effect">
+                                                                <img src="./images/games.jpg" alt="Games"
+                                                                    class="img-fluid">
+                                                            </div>
+                                                        </div>
+                                                        <div class="card-bottom mb-1">
+                                                            <span href="javascript:void(0)" class="btn btn-outline">3+
+                                                                Coupons
+                                                                Available</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="col-md-4 mb-4">
+                                            <a href="javascript:void(0)" class="explore-cat">
+                                                <div class="card border-0 text-center">
+                                                    <div class="card-body p-0">
+                                                        <div class="card-top">
+                                                            <h6 class="font-600">Pets & Animals</h6>
+                                                        </div>
+                                                        <div class="card-mid mb-1 position-relative">
+                                                            <svg xmlns="http://www.w3.org/2000/svg" width="36"
+                                                                height="36" viewBox="0 0 36 36" fill="none"
+                                                                class="center-img">
+                                                                <circle cx="18" cy="18" r="17.25" stroke="white"
+                                                                    stroke-width="1.5" />
+                                                                <g clip-path="url(#clip0_2244_1197)">
+                                                                    <path
+                                                                        d="M10.5 18C11.8807 18 13 16.8807 13 15.5C13 14.1193 11.8807 13 10.5 13C9.11929 13 8 14.1193 8 15.5C8 16.8807 9.11929 18 10.5 18Z"
+                                                                        fill="white" />
+                                                                    <path
+                                                                        d="M15 14C16.3807 14 17.5 12.8807 17.5 11.5C17.5 10.1193 16.3807 9 15 9C13.6193 9 12.5 10.1193 12.5 11.5C12.5 12.8807 13.6193 14 15 14Z"
+                                                                        fill="white" />
+                                                                    <path
+                                                                        d="M21 14C22.3807 14 23.5 12.8807 23.5 11.5C23.5 10.1193 22.3807 9 21 9C19.6193 9 18.5 10.1193 18.5 11.5C18.5 12.8807 19.6193 14 21 14Z"
+                                                                        fill="white" />
+                                                                    <path
+                                                                        d="M25.5 18C26.8807 18 28 16.8807 28 15.5C28 14.1193 26.8807 13 25.5 13C24.1193 13 23 14.1193 23 15.5C23 16.8807 24.1193 18 25.5 18Z"
+                                                                        fill="white" />
+                                                                    <path
+                                                                        d="M23.3387 20.86C22.4687 19.84 21.7387 18.97 20.8587 17.95C20.3987 17.41 19.8087 16.87 19.1087 16.63C18.9987 16.59 18.8887 16.56 18.7787 16.54C18.5287 16.5 18.2587 16.5 17.9987 16.5C17.7387 16.5 17.4687 16.5 17.2087 16.55C17.0987 16.57 16.9887 16.6 16.8787 16.64C16.1787 16.88 15.5987 17.42 15.1287 17.96C14.2587 18.98 13.5287 19.85 12.6487 20.87C11.3387 22.18 9.72868 23.63 10.0287 25.66C10.3187 26.68 11.0487 27.69 12.3587 27.98C13.0887 28.13 15.4187 27.54 17.8987 27.54H18.0787C20.5587 27.54 22.8887 28.12 23.6187 27.98C24.9287 27.69 25.6587 26.67 25.9487 25.66C26.2587 23.62 24.6487 22.17 23.3387 20.86Z"
+                                                                        fill="white" />
+                                                                </g>
+                                                                <defs>
+                                                                    <clipPath id="clip0_2244_1197">
+                                                                        <rect width="24" height="24" fill="white"
+                                                                            transform="translate(6 6)" />
+                                                                    </clipPath>
+                                                                </defs>
+                                                            </svg>
+                                                            <div class="bg-effect">
+                                                                <img src="./images/pets_animal.jpg" alt="Pets & Animals"
+                                                                    class="img-fluid">
+                                                            </div>
+                                                        </div>
+                                                        <div class="card-bottom mb-1">
+                                                            <span href="javascript:void(0)" class="btn btn-outline">3+
+                                                                Coupons
+                                                                Available</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="col-md-4 mb-4">
+                                            <a href="javascript:void(0)" class="explore-cat">
+                                                <div class="card border-0 text-center">
+                                                    <div class="card-body p-0">
+                                                        <div class="card-top">
+                                                            <h6 class="font-600">Travel and Tourism</h6>
+                                                        </div>
+                                                        <div class="card-mid mb-1 position-relative">
+                                                            <svg xmlns="http://www.w3.org/2000/svg" width="36"
+                                                                height="36" viewBox="0 0 36 36" fill="none"
+                                                                class="center-img">
+                                                                <circle cx="18" cy="18" r="17.25" stroke="white"
+                                                                    stroke-width="1.5" />
+                                                                <g clip-path="url(#clip0_2203_1389)">
+                                                                    <path
+                                                                        d="M18 8C14.13 8 11 11.13 11 15C11 19.17 15.42 24.92 17.24 27.11C17.64 27.59 18.37 27.59 18.77 27.11C20.58 24.92 25 19.17 25 15C25 11.13 21.87 8 18 8ZM18 17.5C16.62 17.5 15.5 16.38 15.5 15C15.5 13.62 16.62 12.5 18 12.5C19.38 12.5 20.5 13.62 20.5 15C20.5 16.38 19.38 17.5 18 17.5Z"
+                                                                        fill="white" />
+                                                                </g>
+                                                                <defs>
+                                                                    <clipPath id="clip0_2203_1389">
+                                                                        <rect width="24" height="24" fill="white"
+                                                                            transform="translate(6 6)" />
+                                                                    </clipPath>
+                                                                </defs>
+                                                            </svg>
+                                                            <div class="bg-effect">
+                                                                <img src="./images/travel_tourism.jpg"
+                                                                    alt="Travel and Tourism" class="img-fluid">
+                                                            </div>
+                                                        </div>
+                                                        <div class="card-bottom mb-1">
+                                                            <span href="javascript:void(0)" class="btn btn-outline">3+
+                                                                Coupons
+                                                                Available</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 mt-n140 d-none d-md-block">
+                        <div class="turbo">
+                            <div class="card mb-4 border-0">
+                                <div class="card-body px-4">
+                                    <div class="favourite d-flex justify-content-end align-items-end mb-4">
+                                        <a href="javascript:void(0)"><img src="./images/favorite.svg" alt="favorite"
+                                                class="img-fluid"></a>
+                                        <div class="dropdown kebab-dropdown d-md-none ms-4">
+                                            <a class="" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown"
+                                                aria-expanded="false">
+                                                <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
+                                            </a>
+                                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                                <li><a class="dropdown-item" href="javascript:void(0)">Share</a></li>
+                                                <li><a class="dropdown-item" href="javascript:void(0)">Rate This</a>
+                                                </li>
+                                                <li><a class="dropdown-item" href="javascript:void(0)">Add to
+                                                        Wishlist</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <img src="./images/turbotax.jpg" alt="turbotax"
+                                        class="img-fluid d-block mx-md-auto mb-4 pb-2">
+                                    <div class="d-flex align-items-center justify-content-center flex-wrap mb-2">
+                                        <div class="ratings d-flex align-items-center me-2">
+                                            <img src="./images/star.svg" alt="star" class="img-fluid">
+                                            <img src="./images/star.svg" alt="star" class="img-fluid">
+                                            <img src="./images/star.svg" alt="star" class="img-fluid">
+                                            <img src="./images/star.svg" alt="star" class="img-fluid">
+                                            <img src="./images/star.svg" alt="star" class="img-fluid">
+                                        </div>
+                                        <div class="rates"><span class="color-blue">4/5</span> Rating</div>
+                                    </div>
+
+                                    <div class="rate d-flex align-items-center justify-content-center"
+                                        data-bs-toggle="tooltip" data-bs-placement="bottom"
+                                        title="Give us your rating."><img src="./images/grey_star.svg" alt="rate this"
+                                            class="img-fluid me-1"> Rate This
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="invite-friends mb-5">
+                            <h6 class="mb-3">invite Friends & get exciting offers</h6>
+                            <div
+                                class="social-icons-wrapper d-flex align-items-center justify-content-md-between flex-wrap">
+                                <a href="javascript:void(0)" class="social-icons mb-2" data-bs-toggle="tooltip"
+                                    data-bs-placement="bottom" title="Facebook">
+                                    <img src="./images/facebook.png" alt="facebook" class="img-fluid">
+                                </a>
+                                <a href="javascript:void(0)" class="social-icons mb-2" data-bs-toggle="tooltip"
+                                    data-bs-placement="bottom" title="Whatsapp">
+                                    <img src="./images/whatsapp.png" alt="whatsapp" class="img-fluid">
+                                </a>
+                                <a href="javascript:void(0)" class="social-icons mb-2" data-bs-toggle="tooltip"
+                                    data-bs-placement="bottom" title="Instagram">
+                                    <img src="./images/instagram.png" alt="instagram" class="img-fluid">
+                                </a>
+                                <a href="javascript:void(0)" class="social-icons mb-2" data-bs-toggle="tooltip"
+                                    data-bs-placement="bottom" title="Telegram">
+                                    <img src="./images/telegram.png" alt="telegram" class="img-fluid">
+                                </a>
+                                <a href="javascript:void(0)" class="social-icons mb-2 me-0" data-bs-toggle="tooltip"
+                                    data-bs-placement="bottom" title="More">
+                                    <img src="./images/kebabmenu.png" alt="more" class="img-fluid">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="filter mb-5">
+                            <div class="card border-0">
+                                <div class="card-body">
+                                    <div class="d-flex justify-content-between mb-3">
+                                        <h6 class="font-600 mb-0">Filter</h6>
+                                        <a href="javascript:void(0)" class="">Clear All</a>
+                                    </div>
+                                    <form>
+                                        <div class="filter-form d-flex align-items-center">
+                                            <i class="fa-solid fa-search" aria-hidden="true"></i>
+                                            <input type="email" class="form-control" id="email"
+                                                aria-describedby="emailHelp" placeholder="Search in filters">
+                                        </div>
+                                    </form>
+                                </div>
+                                <a href="javascript:void(0)"
+                                    class="d-flex align-items-center justify-content-between color-blue px-3 py-2 mb-2"
+                                    id="categories">
+                                    Categories <i class="fa fa-angle-right" aria-hidden="true" id="arrowDown"></i>
+                                </a>
+                                <div class="categories-list" id="categoriesList">
+                                    <div class="row categories-list-desc align-items-center mb-3">
+                                        <div class="col-md-4 pe-0">
+                                            <img src="./images/ecommerce.jpg" alt="E-commerce & Shopping"
+                                                class="img-fluid">
+                                        </div>
+                                        <div class="col-md-5">
+                                            <p class="mb-0">E-commerce & Shopping</p>
+                                        </div>
+                                        <div class="col-md-3 d-flex justify-content-center">
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" value="" id="flexCheck"
+                                                    checked>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row categories-list-desc align-items-center mb-3">
+                                        <div class="col-md-4 pe-0">
+                                            <img src="./images/technology.jpg" alt="Electronics & Technology"
+                                                class="img-fluid">
+                                        </div>
+                                        <div class="col-md-5">
+                                            <p class="mb-0">Electronics & Technology</p>
+                                        </div>
+                                        <div class="col-md-3 d-flex justify-content-center">
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" value="" id="flexCheck">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row categories-list-desc align-items-center mb-3">
+                                        <div class="col-md-4 pe-0">
+                                            <img src="./images/fashion.jpg" alt="Fashion & Apparel" class="img-fluid">
+                                        </div>
+                                        <div class="col-md-5">
+                                            <p class="mb-0">Fashion & Apparel</p>
+                                        </div>
+                                        <div class="col-md-3 d-flex justify-content-center">
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" value="" id="flexCheck">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row categories-list-desc align-items-center mb-3">
+                                        <div class="col-md-4 pe-0">
+                                            <img src="./images/games_cat.jpg" alt="Games" class="img-fluid">
+                                        </div>
+                                        <div class="col-md-5">
+                                            <p class="mb-0">Games</p>
+                                        </div>
+                                        <div class="col-md-3 d-flex justify-content-center">
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" value="" id="flexCheck">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row categories-list-desc align-items-center mb-3">
+                                        <div class="col-md-4 pe-0">
+                                            <img src="./images/petsanimal.jpg" alt="Pets & Animals" class="img-fluid">
+                                        </div>
+                                        <div class="col-md-5">
+                                            <p class="mb-0">Pets & Animals</p>
+                                        </div>
+                                        <div class="col-md-3 d-flex justify-content-center">
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" value="" id="flexCheck">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row categories-list-desc align-items-center mb-3">
+                                        <div class="col-md-4 pe-0">
+                                            <img src="./images/traveltourism.jpg" alt="Travel &
+                                            Tourism" class="img-fluid">
+                                        </div>
+                                        <div class="col-md-5">
+                                            <p class="mb-0">Travel &
+                                                Tourism</p>
+                                        </div>
+                                        <div class="col-md-3 d-flex justify-content-center">
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" value="" id="flexCheck">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="popular-brands mb-5">
+                            <h2 class="text-center box-shadow mb-3 d-none d-md-block">Popular Brands</h2>
+                            <div class="d-flex justify-content-between">
+                                <h2 class="d-block d-md-none">Popular Brands</h2>
+                                <a href="javascript:void(0)" class="color-blue d-block d-md-none">See all</a>
+                            </div>
+                            <div class="row popular-brands-wrapper">
+                                <div class="col-md-6 mb-2">
+                                    <a href="javascript:void(0)" class="popular-brands-blog">
+                                        <img src="./images/amazon.svg" alt="Amazon" class="img-fluid w-100">
+                                        <div class="popular-brands-blog-desc text-center p-2">
+                                            <span class="font-12">Amazon</span>
+                                            <span class="d-block font-12 coupon-border">3+ Coupons Available</span>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-md-6 mb-2">
+                                    <a href="javascript:void(0)" class="popular-brands-blog">
+                                        <img src="./images/adobe.svg" alt="Adobe" class="img-fluid w-100">
+                                        <div class="popular-brands-blog-desc text-center p-2">
+                                            <span class="font-12">Adobe</span>
+                                            <span class="d-block font-12 coupon-border">3+ Coupons Available</span>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-md-6 mb-2">
+                                    <a href="javascript:void(0)" class="popular-brands-blog">
+                                        <img src="./images/4wp.svg" alt="4wp" class="img-fluid w-100">
+                                        <div class="popular-brands-blog-desc text-center p-2">
+                                            <span class="font-12">4wp</span>
+                                            <span class="d-block font-12 coupon-border">3+ Coupons Available</span>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-md-6 mb-2">
+                                    <a href="javascript:void(0)" class="popular-brands-blog">
+                                        <img src="./images/accu.svg" alt="Accu" class="img-fluid w-100">
+                                        <div class="popular-brands-blog-desc text-center p-2">
+                                            <span class="font-12">Accu</span>
+                                            <span class="d-block font-12 coupon-border">3+ Coupons Available</span>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-md-6 mb-2">
+                                    <a href="javascript:void(0)" class="popular-brands-blog">
+                                        <img src="./images/ali_express.svg" alt="Ali Express" class="img-fluid w-100">
+                                        <div class="popular-brands-blog-desc text-center p-2">
+                                            <span class="font-12">Ali Express</span>
+                                            <span class="d-block font-12 coupon-border">3+ Coupons Available</span>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-md-6 mb-2">
+                                    <a href="javascript:void(0)" class="popular-brands-blog">
+                                        <img src="./images/lego.svg" alt="Lego" class="img-fluid w-100">
+                                        <div class="popular-brands-blog-desc text-center p-2">
+                                            <span class="font-12">Lego</span>
+                                            <span class="d-block font-12 coupon-border">3+ Coupons Available</span>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-md-6 mb-2">
+                                    <a href="javascript:void(0)" class="popular-brands-blog">
+                                        <img src="./images/adidas.svg" alt="Adidas" class="img-fluid w-100">
+                                        <div class="popular-brands-blog-desc text-center p-2">
+                                            <span class="font-12">Adidas</span>
+                                            <span class="d-block font-12 coupon-border">3+ Coupons Available</span>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-md-6 mb-2">
+                                    <a href="javascript:void(0)" class="popular-brands-blog">
+                                        <img src="./images/apple.svg" alt="Apple" class="img-fluid w-100">
+                                        <div class="popular-brands-blog-desc text-center p-2">
+                                            <span class="font-12">Apple</span>
+                                            <span class="d-block font-12 coupon-border">3+ Coupons Available</span>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-md-6 mb-2">
+                                    <a href="javascript:void(0)" class="popular-brands-blog">
+                                        <img src="./images/KFC.svg" alt="KFC" class="img-fluid w-100">
+                                        <div class="popular-brands-blog-desc text-center p-2">
+                                            <span class="font-12">KFC</span>
+                                            <span class="d-block font-12 coupon-border">3+ Coupons Available</span>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-md-6 mb-2">
+                                    <a href="javascript:void(0)" class="popular-brands-blog">
+                                        <img src="./images/Canva.svg" alt="Canva" class="img-fluid w-100">
+                                        <div class="popular-brands-blog-desc text-center p-2">
+                                            <span class="font-12">Canva</span>
+                                            <span class="d-block font-12 coupon-border">3+ Coupons Available</span>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-md-6 mb-2">
+                                    <a href="javascript:void(0)" class="popular-brands-blog">
+                                        <img src="./images/4MD_Medical.svg" alt="4MD Medical" class="img-fluid w-100">
+                                        <div class="popular-brands-blog-desc text-center p-2">
+                                            <span class="font-12">4MD Medical</span>
+                                            <span class="d-block font-12 coupon-border">3+ Coupons Available</span>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-md-6 mb-2">
+                                    <a href="javascript:void(0)" class="popular-brands-blog">
+                                        <img src="./images/99_Design.svg" alt="99 Design" class="img-fluid w-100">
+                                        <div class="popular-brands-blog-desc text-center p-2">
+                                            <span class="font-12">99 Design</span>
+                                            <span class="d-block font-12 coupon-border">3+ Coupons Available</span>
+                                        </div>
+                                    </a>
+                                </div>
+
+                            </div>
+                            <div class="d-none d-md-block text-center">
+                                <a href="javascript:void(0)" class="color-blue">See all</a>
+                            </div>
+                        </div>
+                        <div class="favourite-coupons mb-4">
+                            <h2 class="text-center box-shadow mb-4 d-none d-md-block">Favourite Coupons</h2>
+                            <div class="d-flex justify-content-between">
+                                <h2 class="d-block d-md-none mb-4">Favourite Coupons</h2>
+                                <a href="javascript:void(0)" class="d-block d-md-none color-blue">Get Code</a>
+                            </div>
+                            <div class="fav-carousel owl-carousel owl-theme">
+                                <a href="javascript:void(0)" class="coupons-blog d-block" style="background: #F13005;">
+                                    <div class="row h-100 align-items-center">
+                                        <div class="col-4 position-relative h-100 text-end">
+                                            <div
+                                                class="coupons-blog-left h-100 d-flex justify-content-end align-items-center">
+                                                <img src="./images/mcdonalds_coupon.svg" alt="McDonalds"
+                                                    class="img-fluid ps-2">
+                                            </div>
+                                        </div>
+                                        <div class="col-8">
+                                            <div class="coupons-blog-mid text-white">
+                                                <h2 class="font-600 mb-0">$10</h2>
+                                                <p class="mb-2">McDonalds</p>
+                                                <p class="font-10 mb-1">Valid until 01 February 2023</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                                <a href="javascript:void(0)" class="coupons-blog d-block"
+                                    style="background-color: #144EB4;">
+                                    <div class="row h-100 align-items-center">
+                                        <div class="col-4 position-relative h-100 text-end">
+                                            <div
+                                                class="coupons-blog-left h-100 d-flex justify-content-end align-items-center">
+                                                <img src="./images/amazon_coupon.svg" alt="amazon"
+                                                    class="img-fluid ps-2">
+                                            </div>
+                                        </div>
+                                        <div class="col-8">
+                                            <div class="coupons-blog-mid text-white">
+                                                <h2 class="font-600 mb-0">$12</h2>
+                                                <p class="mb-2">Amazon</p>
+                                                <p class="font-10 mb-1">Valid until 02 February 2023</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                                <a href="javascript:void(0)" class="coupons-blog d-block"
+                                    style="background-color: #FF0029;">
+                                    <div class="row h-100 align-items-center">
+                                        <div class="col-4 position-relative h-100 text-end">
+                                            <div
+                                                class="coupons-blog-left h-100 d-flex justify-content-end align-items-center">
+                                                <img src="./images/kfc_coupon.svg" alt="KFC" class="img-fluid ps-2">
+                                            </div>
+                                        </div>
+                                        <div class="col-8">
+                                            <div class="coupons-blog-mid text-white">
+                                                <h2 class="font-600 mb-0">$19</h2>
+                                                <p class="mb-2">KFC</p>
+                                                <p class="font-10 mb-1">Valid until 02 April 2023</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <img src="./images/fav_coupons.jpg" alt="favourite coupons"
+                                class="img-fluid mt-n28 mb-5 w-100 pb-3 pb-md-0">
+                            <div class="text-center d-none d-md-block">
+                                <a href="javascript:void(0)" class="color-blue">Get Code</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4 mb-3">
+                        <div class="footer-about">
+                            <h2 class="mb-3">YOUR LOGO</h2>
+                            <p class="color-blue font-400">Some footer text about the Website. Just a little description
+                                to
+                                help people understand you
+                                better</p>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-2">
+                        <div class="footer-links">
+                            <h6 class="mb-3">Quick Links</h6>
+                            <ul class="p-0">
+                                <li class="">
+                                    <a href="javascript:void(0)" class="active">
+                                        Home
+                                    </a>
+                                </li>
+                                <li class="">
+                                    <a href="javascript:void(0)">
+                                        All Brands
+                                    </a>
+                                </li>
+                                <li class="">
+                                    <a href="javascript:void(0)">
+                                        Categories
+                                    </a>
+                                </li>
+                                <li class="">
+                                    <a href="javascript:void(0)">
+                                        Coupons
+                                    </a>
+                                </li>
+                                <li class="">
+                                    <a href="javascript:void(0)">
+                                        About Us
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-2">
+                        <div class="footer-links">
+                            <h6 class="mb-3">Legal</h6>
+                            <ul class="p-0">
+                                <li class="">
+                                    <a href="javascript:void(0)">
+                                        Contact
+                                    </a>
+                                </li>
+                                <li class="">
+                                    <a href="javascript:void(0)">
+                                        Privacy Policies
+                                    </a>
+                                </li>
+                                <li class="">
+                                    <a href="javascript:void(0)">
+                                        Terms & Conditions
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mt-3">
+                        <form>
+                            <div class="subcribe-input footer-input mb-3">
+                                <label for="email" class="form-label color-blue font-400">Sign up for coupons and
+                                    more</label>
+                                <div class="d-flex align-items-center">
+                                    <input type="email" class="form-control" id="email" aria-describedby="emailHelp"
+                                        placeholder="Enter your email here">
+                                    <a href="javascript:void(0)">
+                                        <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom text-center">
+            <p class="mb-0 text-black-50">Copyright © 2023 web</p>
+        </div>
+    </footer>
+
+    <!-- Modal -->
+    <div class="modal fade discount-modal" id="couponModal" tabindex="-1" aria-labelledby="couponModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+                <div class="modal-header border-0 p-4">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body px-4 py-0">
+                    <div class="offer-head d-flex align-items-center mb-4">
+                        <div class="offer-head-img me-5">
+                            <img src="./images/turbotax.jpg" alt="turbotax" class="img-fluid w-75">
+                        </div>
+                        <h4 class="modal-title color-blue" id="couponModalLabel">20% Off Coupon | Denny's Rewards
+                            Program</h4>
+                    </div>
+                    <div class="row justify-content-center">
+                        <div class="col-md-9">
+                            <div class="offer-mid text-center">
+                                <h6 class="color-blue mb-4 text-uppercase">Copy This Code And Use at checkout</h6>
+                                <div class="d-flex align-items-center justify-content-end mb-4">
+                                    <div class="offer-mid-code">
+                                        <span class="color-blue">COUPO10FAB</span>
+                                    </div>
+                                    <a href="javascript:void(0)" class="btn btn-blue copy-code">Copy <i
+                                            class="fa fa-copy ms-1" aria-hidden="true"></i></a>
+                                </div>
+                                <div class="d-flex justify-content-end mb-4">
+                                    <a href="javascript:void(0)" class="btn btn-blue">Go to Store <i
+                                            class="fa fa-angle-right ms-2" aria-hidden="true"></i></a>
+                                </div>
+                                <div class="mid-coupons-detail">
+                                    <a class="text-black-50 d-block text-end mb-4" data-bs-toggle="collapse"
+                                        href="#coupondetails" role="button" aria-expanded="false"
+                                        aria-controls="coupondetails">
+                                        Coupon Details <i class="fa fa-angle-down ms-1" aria-hidden="true"></i>
+                                    </a>
+                                    <div class="collapse" id="coupondetails">
+                                        <p class="text-start">Some placeholder content for the collapse component. This
+                                            panel is hidden by default but revealed when the user activates the relevant
+                                            trigger.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer justify-content-between p-4 border-0">
+                    <div class="d-flex align-items-center">
+                        <a href="javascript:void(0)" class="color-blue d-block me-5"><span><img src="./images/check.svg"
+                                    alt="verified" class="img-fluid me-1"></span>Coupon verified</a>
+                        <span class="text-black-50">5 left</span>
+                    </div>
+                    <a href="javascript:void(0)" class="text-black-50"><i class="fa fa-share-nodes me-1"
+                            aria-hidden="true"></i> Share</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade search-modal" id="search" tabindex="-1" aria-labelledby="searchLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+                <div class="modal-header border-0 p-4">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body px-4 py-0">
+                    <div class="offer-head d-flex align-items-center mb-4">
+                        <div class="offer-head-img me-5">
+                            <img src="./images/turbotax.jpg" alt="turbotax" class="img-fluid w-75">
+                        </div>
+                        <h4 class="modal-title color-blue" id="searchLabel">20% Off Coupon | Denny's Rewards
+                            Program</h4>
+                    </div>
+                    <div class="row justify-content-center">
+                        <div class="col-md-9">
+                            <div class="offer-mid text-center">
+                                <h6 class="color-blue mb-4 text-uppercase">Copy This Code And Use at checkout</h6>
+                                <div class="d-flex align-items-center justify-content-end mb-4">
+                                    <div class="offer-mid-code">
+                                        <span class="color-blue">COUPO10FAB</span>
+                                    </div>
+                                    <a href="javascript:void(0)" class="btn btn-blue copy-code">Copy <i
+                                            class="fa fa-copy ms-1" aria-hidden="true"></i></a>
+                                </div>
+                                <div class="d-flex justify-content-end mb-4">
+                                    <a href="javascript:void(0)" class="btn btn-blue">Go to Store <i
+                                            class="fa fa-angle-right ms-2" aria-hidden="true"></i></a>
+                                </div>
+                                <div class="mid-coupons-detail">
+                                    <a class="text-black-50 d-block text-end mb-4" data-bs-toggle="collapse"
+                                        href="#coupondetails" role="button" aria-expanded="false"
+                                        aria-controls="coupondetails">
+                                        Coupon Details <i class="fa fa-angle-down ms-1" aria-hidden="true"></i>
+                                    </a>
+                                    <div class="collapse" id="coupondetails">
+                                        <p class="text-start">Some placeholder content for the collapse component. This
+                                            panel is hidden by default but revealed when the user activates the relevant
+                                            trigger.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer justify-content-between p-4 border-0">
+                    <div class="d-flex align-items-center">
+                        <a href="javascript:void(0)" class="color-blue d-block me-5"><span><img src="./images/check.svg"
+                                    alt="verified" class="img-fluid me-1"></span>Coupon verified</a>
+                        <span class="text-black-50">5 left</span>
+                    </div>
+                    <a href="javascript:void(0)" class="text-black-50"><i class="fa fa-share-nodes me-1"
+                            aria-hidden="true"></i> Share</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script type="text/javascript" src="./js/jquery-3.6.1.min.js"></script>
+    <script type="text/javascript" src="./js/bootstrap.bundle.js"></script>
+    <script type="text/javascript" src="./js/owl.carousel.min.js"></script>
+    <script type="text/javascript" src="./js/custom.js"></script>
+
+    <script>
+        let dropdown = document.getElementById("categories");
+        let categoriesList = document.getElementById("categoriesList")
+        let arrowDown = document.getElementById("arrowDown")
+        dropdown.addEventListener('click', function () {
+            categoriesList.classList.toggle('d-block');
+            if (arrowDown.classList.contains("fa-angle-right")) {
+                arrowDown.classList.remove("fa-angle-right");
+                arrowDown.classList.add("fa-angle-down");
+            }
+            else {
+                arrowDown.classList.add("fa-angle-right");
+                arrowDown.classList.remove("fa-angle-down");
+            }
+        }); 
+    </script>
+
+
+</body>
+
+</html>
